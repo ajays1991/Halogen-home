@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: essay
+  account_id: 1
+  user_id: 1
+  metadata: 
+
+two:
+  name: questions
+  account_id: 1
+  user_id: 1
+  metadata: 

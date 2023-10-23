@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  account_id: 1
+  assignment_type_id: 1
+  file_id: 1
+  metadata: 
+
+two:
+  name: MyString
+  account_id: 1
+  assignment_type_id: 1
+  file_id: 1
+  metadata: 

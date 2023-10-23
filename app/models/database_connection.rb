@@ -1,0 +1,2 @@
+class DatabaseConnection < ApplicationRecord
+end

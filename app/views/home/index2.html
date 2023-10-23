@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/out.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="/assets/out.js"></script>
+    <title>BlockSys | Construction BIM Tool</title>
+  </head>
+  <body>
+<!-- Icons -->
+<svg style="display: none;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="icon-twitter" viewBox="0 0 950.8560180664062 1024">
+			<title>twitter</title>
+			<path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"></path>
+		</symbol>
+		<symbol id="icon-facebook" viewBox="0 0 602.2870178222656 1024">
+			<title>facebook</title>
+			<path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"></path>
+		</symbol>
+		<symbol id="icon-linkedin" viewBox="0 0 877.7143758137245 1024">
+			<title>linkedin</title>
+			<path class="path1" d="M199.429 357.143v566.286h-188.571v-566.286h188.571zM211.429 182.286q0.571 41.714-28.857 69.714t-77.429 28h-1.143q-46.857 0-75.429-28t-28.571-69.714q0-42.286 29.429-70t76.857-27.714 76 27.714 29.143 70zM877.714 598.857v324.571h-188v-302.857q0-60-23.143-94t-72.286-34q-36 0-60.286 19.714t-36.286 48.857q-6.286 17.143-6.286 46.286v316h-188q1.143-228 1.143-369.714t-0.571-169.143l-0.571-27.429h188v82.286h-1.143q11.429-18.286 23.429-32t32.286-29.714 49.714-24.857 65.429-8.857q97.714 0 157.143 64.857t59.429 190z"></path>
+		</symbol>
+		<symbol id="icon-google-plus" viewBox="0 0 1316.572110494133 1024">
+			<title>google-plus</title>
+			<path class="path1" d="M821.143 521.714q0 118.857-49.714 211.714t-141.714 145.143-210.857 52.286q-85.143 0-162.857-33.143t-133.714-89.143-89.143-133.714-33.143-162.857 33.143-162.857 89.143-133.714 133.714-89.143 162.857-33.143q163.429 0 280.571 109.714l-113.714 109.143q-66.857-64.571-166.857-64.571-70.286 0-130 35.429t-94.571 96.286-34.857 132.857 34.857 132.857 94.571 96.286 130 35.429q47.429 0 87.143-13.143t65.429-32.857 44.857-44.857 28-47.429 12.286-42.286h-237.714v-144h395.429q6.857 36 6.857 69.714zM1316.571 452v120h-119.429v119.429h-120v-119.429h-119.429v-120h119.429v-119.429h120v119.429h119.429z"></path>
+		</symbol>
+		<symbol id="icon-close" viewBox="0 0 352 448">
+			<path d="M324.5 330.5q0 10-7 17l-34 34q-7 7-17 7t-17-7l-73.5-73.5-73.5 73.5q-7 7-17 7t-17-7l-34-34q-7-7-7-17t7-17l73.5-73.5-73.5-73.5q-7-7-7-17t7-17l34-34q7-7 17-7t17 7l73.5 73.5 73.5-73.5q7-7 17-7t17 7l34 34q7 7 7 17t-7 17l-73.5 73.5 73.5 73.5q7 7 7 17z"></path>
+		</symbol>
+	</defs>
+</svg>
+    <header class="main-header">
+      <div class="navbar"><a href="/home.html"><img src="/assets/logos/logo_with_name.png" alt="Gridle Logo" data-collapsed-src="/assets/logos/logo_with_name.png" data-src="/assets/logos/logo_with_name.png" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="/how-gridle-works.html">Product</a></li>
+            <li><a href="/careers.html">Careers</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/login.html" class="outline-btn">About Us</a></li>
+            <li><a href="/login.html" class="outline-btn">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="video-modal">
+      <div class="video-container"><a id="closeIntroVideo" href="javascript:;" class="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" >
+          	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+          </svg>
+          </a>
+        <video id="introVideo" muted="" poster="/assets/homepage/video_placeholder/back_new_compressed.jpg" controls="true">
+          <source src="/assets/homepage/videos/gridle_landing_video_opt.mp4" type="video/mp4">
+          <source src="/assets/homepage/videos/gridle_landing_video_opt.webm" type="video/webm">
+          <source src="/assets/homepage/videos/gridle_landing_video_opt.ogv" type="video/ogg">
+        </video>
+      </div>
+    </div>
+    <section class="home-banner">
+      <div class="half-oval"></div>
+      <div class="content"><a id="playIntroVideo" href="javascript:;" class="play-icon-wrapper">
+          <svg class="play" viewbox="0 0 230 230" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          	<g class="video-play-icon">
+          		<path class="paly-icon-shape" fill="#D8D8D8" opacity="0.2" stroke-width="10" stroke="#979797" d="m115,218c56.88533,0 103,-46.11467 103,-103c0,-56.88533 -46.11467,-103 -103,-103c-56.88533,0 -103,46.11467 -103,103c0,56.88533 46.11467,103 103,103z"/>
+          		<path class="paly-icon-shape triangle" fill="#FFFFFF" opacity="0.318214" d="m96.243385,156.810455c-4.297058,2.494705 -7.780502,0.497131 -7.780502,-4.474564l0,-75.571342c0,-4.965935 3.487946,-6.966644 7.780502,-4.474564l65.011436,37.743156c4.297028,2.49472 4.292526,6.542053 0,9.034134l-65.011436,37.743179z"/>
+          	</g>
+          </svg></a>
+        <h1 class="extrabold-heading fade-down">Construction Management BIM Tool.</h1>
+        <p class="banner-desc fade-up">BIM enabled collabration tool to work together for project managers, field engineers, architects, structural design teams</p>
+        <div class="cta-box">
+          <div class="actions">
+            <p>Interested to learn more? Request a no obligation demo. It’s on us. :)</p><a href="/request-a-demo.html" class="btn btn-success">Request a demo</a>
+            <div class="or">or</div>
+            <p>Convinced already? Give our unlimited free-forever version a try today.</p><a href="/signup.html" class="btn btn-info">SIGNUP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-how-it-works big-cta-with-img">
+      <div data-wow-offset="30" class="content wow fade-down"><img src="/assets/homepage/home-banner.png" alt="How Gridle Works" class="img-responsive center">
+        <h1 class="extrabold-heading">BlockSys works the way you do.</h1>
+        <p>BlockSys enables easy colabration within AEC industry. A RERA complaint project management and BIM tool.<b> Built for everyone to collbrate on a BIM enabled tool engineers, project managers, architects, structural design teams.</b></p>
+        <p>Task management, Sync drawings, Revit-Autodesk integration, review drawings and site collabration, everything without moving, counting or asking around. This means, your work is about <b>getting things done!</b></p>
+      </div>
+    </section>
+   <!--  <section class="road-cta home-top-cta">
+      <div class="cta-content">
+        <div class="cta-title">
+          <h1 class="extrabold-heading">Gridle is powerful. Don’t believe?</h1><a href="/how-gridle-works.html" class="btn btn-info">See the Product</a>
+        </div>
+        <p>Whether you are growing off-the-charts or are a small local business; Gridle is what you have been looking for. One place with all your work. Gridle is convenience. Gridle is peace of mind.</p>
+      </div>
+    </section> -->
+    <section class="feature-screens home-feature-screens">
+      <div class="feature-title wow fade-down">
+        <h1 class="extrabold-heading">Product and Features</h1>
+      </div>
+      <div class="feature wow fade-down">
+        <div class="feature-desc">
+          <h2>Team workflow management</h2>
+          <p>A cloud based Project workflow setup to create and manage multiple projects, sub projects, stake holders, documents and resources. <b class="text-highlight">Statuses, stages, drawings, reviews</b> in a beautifully designed intuitive interface so you can perform actionable items that produce results. <b class="text-highlight">Get your team, visualized.</b></p>
+          <p><a href="/how-gridle-works.html#feature-section">LEARN MORE &gt;</a></p>
+        </div>
+        <div class="feature-screen"><img src="/assets/homepage/desk-scroll.png" alt="We call it desk" class="img-responsive"></div>
+      </div>
+      <div class="feature wow fade-down">
+        <div class="feature-desc">
+          <h2>BlockSys construction site mobile workflow solution</h2>
+          <p>Because site construction is actually moving the most impacted progress, it makes site inspection easy from just your desk or mobile. All. At once. The mobile solution allows you to know <b class="text-highlight">site statuses, stages and clarifications from designs from field engineers</b> at any location. <b class="text-highlight">Get your team, visualized.</b></p>
+          <p><a href="/how-gridle-works.html#feature-section">LEARN MORE &gt;</a></p>
+        </div>
+        <div class="feature-screen"><img src="/assets/homepage/desk-scroll.png" alt="We call it desk" class="img-responsive"></div>
+      </div>
+      <div class="feature wow fade-down">
+        <div class="feature-desc">
+          <h2>Transmittal and document collabration.</h2>          
+          <p>A secure solution for the entire project. Share documents and drawings instantly within your company and with external members of your project team. <b class="text-highlight">From managing design diagrams to drawing reviews and realtime tools sync; makes sures for you to be on top of design workflows;</b> We sets it out in few clicks </p>
+          <p><a href="/how-gridle-works.html#feature-section-bottom">LEARN MORE &gt;</a></p>
+        </div>
+        <div class="feature-screen"><img src="/assets/homepage/revit_integration.jpg" alt="Custom workflows and templates" class="img-responsive"></div>
+      </div>
+    </section>
+    <!-- <section class="animated-cta home-status-cta"><img src="/assets/homepage/status_motion.gif" alt="Status change image" class="img-responsive center wow fade-down">
+      <div class="content wow fade-up">
+        <h2>Oh and also, Statuses!</h2>
+        <p>Writing status emails? And then losing them in your inbox? While it is important to complete the task ASAP, it’s as important for the person in charge to know the status. With Gridle, that’s a grand total of one click away.</p>
+      </div>
+    </section> -->
+    <section class="home-feature-highlight feature-highlights">
+      <div class="feature-title wow fade-down">
+        <h1 class="extrabold-heading">Plus, works for other stakeholders too</h1>
+        <p>Why use different tools to work together when you can have everything you need under one roof, in a secure and stable environment, on web and on the go.</p>
+      </div>
+      <div class="features wow fade-down">
+        <div class="feature"><img src="/assets/homepage/bim_home_feature.jpg" alt="Icon" class="img-responsive">
+          <h3>BIM enabled </h3>
+          <p>Get your point across with comments, manage all your assets in one place and make sure right people are involved at right stages. Gridle integrates with Dropbox and others, so no matter where your clients are, they are here. <br><br><br><a href="/DESIGN.html">More details</a></p>
+        </div>
+        <div class="feature"><img src="/assets/homepage/rera_homepage.jpg" alt="Icon" class="img-responsive">
+          <h3>Generate RERA reports</h3>
+          <p>Manage complete construction development lifecycle in compliance with RERA. Take important decisions for approval or rejections<br><br><br><a href="/HR.html">More details</a></p>
+        </div>
+        <div class="feature"><img src="/assets/homepage/revit_integration.jpg" alt="Icon" class="img-responsive">
+          <h3>Design tools integration - Reviews and sharing</h3>
+          <p>Make sure you are on top of design workflow. While you can manage design milestones, reviews, version control, ensuring everyone is aligned internally and across organisations, working off the latest documents and drawings. <br><br><br><a href="/IT.html">More details</a></p>
+        </div>
+        <div class="feature"><img src="/assets/homepage/deal_icon.png" alt="Icon" class="img-responsive">
+          <h3>Project tracking flow</h3>
+          <p>Track project flow across team and organisations with schedules reporting dashboard, milestone stages and statuses<br><br><br><a href="/DEAL.html">More details</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="tools-combo home-tools">
+      <div class="feature-title wow fade-down">
+        <h1 class="extrabold-heading">Blocksys works with AEC tools and apps</h1>
+      </div>
+      <!-- <div class="image-container"><img src="/assets/logos/logo-new.jpg" alt="Gridle Logo" class="logo-image"><img src="/assets/homepage/integration-transparent.png" alt="Integration Tools" data-wow-delay="1s" data-wow-offset="50" class="wow tool-animation"></div>
+      <div class="tools-desc wow fade-down">
+        <h1 class="extrabold-heading">It’s like magic!</h1>
+        <p>Making Gridle better is literally in your hands. Integrate applications and services you already use to get notifications right within Gridle. More power to you.</p>
+      </div> -->
+    </section>
+    <section class="road-cta home-cta">
+      <div class="cta-content">
+        <div class="cta-title">
+          <h1 class="extrabold-heading">So, stop working like it’s the 90s</h1><a href="/signup.html" class="btn btn-success">SIGNUP NOW</a>
+        </div>
+        <p>Manage all of your work in one place. Leave behind the inefficient patch work of apps and excel sheets and emails and chat clients. Sign up for free, today.</p>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-top">
+        <div class="menu">
+          <h4>About BlockSys</h4>
+          <ul>
+            <li><a href="/careers.html">Careers</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/about-us.html">About us</a></li>
+            <li><a href="/about-us.html">Team</a></li>
+            <li><a href="/about-gridle.html" class="highlight">Making BlockSys &gt;</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h4>BlockSys Projects</h4>
+          <ul>
+            <!-- <li><a href="/DESIGN.html">Gridle for Designers</a></li>
+            <li><a href="/IT.html">Gridle for IT Managers</a></li>
+            <li><a href="/HR.html">Gridle for HR Managers</a></li>
+            <li><a href="/DEAL.html">Gridle for Deal Flow</a></li>
+            <li><a href="/integrations.html" class="highlight">See Integrations &gt;</a></li> -->
+          </ul>
+        </div>
+        <div class="menu">
+          <h4>Case Studies</h4>
+          <ul>
+            <!-- <li><a href="/design-case-study.html">How Glazz uses Gridle</a></li>
+            <li><a href="/it-case-study.html">How You Dedicated uses Gridle</a></li>
+            <li><a href="/hr-case-study.html">How Wwhere uses Gridle</a></li>
+            <li><a href="/deal-case-study.html">How IFP uses Gridle</a></li>
+            <li><a href="/case-studies.html" class="highlight">See who are using Gridle &gt;</a></li>
+ -->          </ul>
+        </div>
+        <div class="menu">
+          <h4>Resources</h4>
+          <ul>
+            <!--lia(href="/blog-list.html") Blog
+            -->
+            <li><a href="/contact.html">Contact @ BlockSys</a></li>
+            <li><a href="/press.html">Press</a></li>
+            <li><a href="/terms.html">Terms of use</a></li>
+            <li><a href="/about-gridle.html">Manifesto</a></li>
+            <li><a href="/about-gridle.html" class="highlight">How to use webhooks<br> to use BlockSys &gt;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social"><a href="https://twitter.com/blocksys_io" target="_blank" title="Gridle on Twitter" class="twitter-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon">
+            	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+            </a><a href="https://www.linkedin.com/company/gridle-in" target="_blank" title="Gridle on linkedin" class="linkedin-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon">
+            	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+            </svg>
+            </a><a href="https://www.facebook.com/gridle.in" target="_blank" title="Gridle on Facebook" class="facebook-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon">
+            	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+            </svg>
+            </a></div>
+        <div class="apps"><a href="https://play.google.com/store/apps/details?id=io.gridle.webview" target="blank" title="Get Gridle app on Google play store"><img src="/assets/homepage/get-it-google-play.png" alt="Griddle android app"></a><a href="javascript:;" target="blank" title="Get Gridle app on Apple store"><img src="/assets/homepage/get-it-ios-app.png" alt="Griddle i-phone app"></a></div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	$bannervideo = $('#introVideo');
+      	$playbannervideo = $('#playIntroVideo');
+      
+      	$playbannervideo.click(function(){
+      		$bannervideo.get(0).play();
+      		$('.video-modal').addClass('open');
+      	});
+      });
+      
+      $('#closeIntroVideo').click(function(){
+      	$('.video-modal').removeClass('open');
+      	$('#introVideo').get(0).pause();
+      });
+      
+      $(".video-modal").click(function(e){
+      	if(e.target == this) {
+      		$('.video-modal').removeClass('open');
+      		$('#introVideo').get(0).pause();
+      	}
+      });
+      	
+    </script>
+  </body>
+</html>

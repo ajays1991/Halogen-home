@@ -1,0 +1,4768 @@
+@charset "UTF-8";
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file imports all the necessary stylesheets for Gridle outer pages.
+
+=====================================================*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,300,600,600italic,400italic);
+/* line 9, ../sass/base/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/base/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/base/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/base/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox less then 22.
+ */
+/* line 77, ../sass/base/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/base/_reset.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../sass/base/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../sass/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../sass/base/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../sass/base/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, ../sass/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, ../sass/base/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, ../sass/base/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, ../sass/base/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, ../sass/base/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, ../sass/base/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, ../sass/base/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, ../sass/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, ../sass/base/_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, ../sass/base/_reset.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../sass/base/_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../sass/base/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../sass/base/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../sass/base/_reset.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../sass/base/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../sass/base/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../sass/base/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../sass/base/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../sass/base/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../sass/base/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../sass/base/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, ../sass/base/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, ../sass/base/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, ../sass/base/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, ../sass/base/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, ../sass/base/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, ../sass/base/_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, ../sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, ../sass/base/_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/******  COLOR PALETTE **********/
+/**************************************/
+/*********  BRAND COLOR   **********/
+/**********************************/
+/****** BACKGROUND COLORS ***********/
+/***********************************/
+/********   BORDER COLOR    **************/
+/***********************************/
+/****** BUTTON COLORS   *********/
+/********************************/
+/*******    FONT FAMILY     *********/
+/*Font family*/
+/***********************************/
+/*********  FONT COLORS  **************/
+/**************************************/
+/*********   FONT SIZE   **************/
+/********************************/
+/*******    FONT WEIGHT     *********/
+/*********************************/
+/********   ICONS DIMENSTIONS   ********/
+/***************************************/
+/*******    AVATAR DIMENSIONS   *********/
+/****************************************/
+/********   BORDER RADIUS ************/
+/************************************/
+/********   SIDEBAR DIMENSIONS  ********/
+/****************************************/
+/**********    HEADER DIMENSTIONS  ********/
+/****************************************/
+/********   OTHER DIMENSIONS    ***********/
+/*progress bar height*/
+/******************************************/
+/****************************************/
+/**********    OUT VARIABLES  ********/
+/* Element colors */
+/*Font size*/
+/*Brand color*/
+/*user img heights*/
+/*icon height*/
+/*Spacing*/
+/*Icon height Variables*/
+/*=========================== 
+	Social Colors
+=============================*/
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file consists helper styles for outer pages.
+
+=====================================================*/
+/* line 8, ../sass/helpers/_helper-out.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 11, ../sass/helpers/_helper-out.scss */
+.img-responsive {
+  max-width: 100%;
+  object-fit: scale-down;
+}
+/* line 14, ../sass/helpers/_helper-out.scss */
+.img-responsive.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 20, ../sass/helpers/_helper-out.scss */
+.empty-container {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 29, ../sass/helpers/_helper-out.scss */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 1300px;
+          perspective: 1300px;
+}
+/* line 49, ../sass/helpers/_helper-out.scss */
+.video-modal.open {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+/* line 53, ../sass/helpers/_helper-out.scss */
+.video-modal.open .video-container {
+  -webkit-transform: translateZ(0px) translateX(0%) rotateY(0deg);
+          transform: translateZ(0px) translateX(0%) rotateY(0deg);
+}
+/* line 57, ../sass/helpers/_helper-out.scss */
+.video-modal .close-icon {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  fill: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+/* line 71, ../sass/helpers/_helper-out.scss */
+.video-modal .close-icon:hover {
+  fill: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* line 76, ../sass/helpers/_helper-out.scss */
+.video-modal .video-container {
+  padding: 40px;
+  display: block;
+  position: relative;
+  transition: all 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+          transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+}
+/* line 84, ../sass/helpers/_helper-out.scss */
+.video-modal .video-container video {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1400px) {
+  /* line 76, ../sass/helpers/_helper-out.scss */
+  .video-modal .video-container {
+    max-width: 960px;
+  }
+}
+
+/* line 94, ../sass/helpers/_helper-out.scss */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 108, ../sass/helpers/_helper-out.scss */
+.animated-checkbox {
+  position: relative;
+}
+/* line 110, ../sass/helpers/_helper-out.scss */
+.animated-checkbox input[type="checkbox"] {
+  display: none;
+}
+/* line 112, ../sass/helpers/_helper-out.scss */
+.animated-checkbox input[type="checkbox"] + .label-text {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: top;
+}
+/* line 116, ../sass/helpers/_helper-out.scss */
+.animated-checkbox input[type="checkbox"] + .label-text:before {
+  content: " ";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #ddd;
+  border: 1px solid #bbb;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+/* line 130, ../sass/helpers/_helper-out.scss */
+.animated-checkbox input[type="checkbox"]:checked + .label-text:before {
+  border-color: #4385f5;
+}
+/* line 133, ../sass/helpers/_helper-out.scss */
+.animated-checkbox input[type="checkbox"]:checked + .label-text:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 4px;
+  border: 2px solid #4385f5;
+  border-top: none;
+  border-right: none;
+  z-index: 2;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@-webkit-keyframes tick {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes tick {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 28 January 2016
+Description : This file consists animations for outer pages
+
+=====================================================*/
+/* line 9, ../sass/helpers/_animations.scss */
+.tool-animation {
+  -webkit-animation: toolsAnimation 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: toolsAnimation 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes toolsAnimation {
+  0% {
+    -webkit-transform: rotate(-36deg);
+            transform: rotate(-36deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes toolsAnimation {
+  0% {
+    -webkit-transform: rotate(-36deg);
+            transform: rotate(-36deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/* line 25, ../sass/helpers/_animations.scss */
+.fade-up {
+  -webkit-animation: fadeUp 1s ease-in-out;
+          animation: fadeUp 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/* line 41, ../sass/helpers/_animations.scss */
+.fade-down {
+  -webkit-animation: fadeDown 1s ease-in-out;
+          animation: fadeDown 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/* line 57, ../sass/helpers/_animations.scss */
+.fade-left {
+  -webkit-animation: fadeLeft 1s ease-in-out;
+          animation: fadeLeft 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+            transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+            transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/* line 73, ../sass/helpers/_animations.scss */
+.fade-right {
+  -webkit-animation: fadeRight 1s ease-in-out;
+          animation: fadeRight 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+            transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+            transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file consists common styles for outer pages.
+		>> Included Componants
+			* Buttons
+			* Navbar
+			* Footer
+					
+=====================================================*/
+/* line 13, ../sass/layout/_layout-out.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/layout/_layout-out.scss */
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/layout/_layout-out.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #6E6F71;
+}
+
+/* line 25, ../sass/layout/_layout-out.scss */
+a {
+  color: #4385f5;
+  transition: all 0.3s ease-in-out;
+}
+/* line 28, ../sass/layout/_layout-out.scss */
+a:hover {
+  color: #2b75f4;
+}
+
+/* line 32, ../sass/layout/_layout-out.scss */
+.extrabold-heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+@media (max-width: 767px) {
+  /* line 32, ../sass/layout/_layout-out.scss */
+  .extrabold-heading {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 481px) {
+  /* line 32, ../sass/layout/_layout-out.scss */
+  .extrabold-heading {
+    font-size: 24px !important;
+  }
+}
+/* line 43, ../sass/layout/_layout-out.scss */
+.extrabold-heading.center {
+  text-align: center;
+}
+
+/* line 47, ../sass/layout/_layout-out.scss */
+.btn {
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  border: 0;
+  min-width: 150px;
+  text-align: center;
+}
+/* line 59, ../sass/layout/_layout-out.scss */
+.btn:hover {
+  color: #fff;
+}
+/* line 62, ../sass/layout/_layout-out.scss */
+.btn-success {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 65, ../sass/layout/_layout-out.scss */
+.btn-success:hover {
+  background-color: #278e5f;
+}
+/* line 69, ../sass/layout/_layout-out.scss */
+.btn-warning {
+  background-color: #fcdc01;
+  color: #fff;
+}
+/* line 72, ../sass/layout/_layout-out.scss */
+.btn-warning:hover {
+  background-color: #c9b001;
+}
+/* line 76, ../sass/layout/_layout-out.scss */
+.btn-danger {
+  background-color: #F06260;
+  color: #fff;
+}
+/* line 79, ../sass/layout/_layout-out.scss */
+.btn-danger:hover {
+  background-color: #ec3431;
+}
+/* line 83, ../sass/layout/_layout-out.scss */
+.btn-info {
+  background-color: #48affb;
+  color: #fff;
+}
+/* line 86, ../sass/layout/_layout-out.scss */
+.btn-info:hover {
+  background-color: #1699fa;
+}
+/* line 90, ../sass/layout/_layout-out.scss */
+.btn-with-icon {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 94, ../sass/layout/_layout-out.scss */
+.btn-with-icon .btn-icon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+/* The code bellow is important. Please dont't remove. */
+/* .half-oval {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -70%;
+	height: 150%;
+	border-radius: 100% 100% 0 0;
+	z-index: 1;
+
+	opacity: 0.2;
+	background-color: rgba(215,215,215,0.5);
+	transition: all 0.3s ease-in-out;
+	&.flat {
+		border-radius: 0;
+		height: 0;
+	}
+	@media (max-width : 1100px) {
+		display: none !important;
+	}
+	@media (min-width: 1400px) {
+		bottom: -95%;
+		height: 180%;
+	}
+} */
+/* line 129, ../sass/layout/_layout-out.scss */
+.half-oval {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  background-image: url(/img/homepage/oval-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+/*=====================
+	Navbar Styles 
+=======================*/
+/* line 146, ../sass/layout/_layout-out.scss */
+.main-header {
+  position: relative;
+}
+/* line 148, ../sass/layout/_layout-out.scss */
+.main-header .navbar {
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 480px) {
+  /* line 148, ../sass/layout/_layout-out.scss */
+  .main-header .navbar {
+    padding: 20px;
+  }
+}
+/* line 162, ../sass/layout/_layout-out.scss */
+.main-header .navbar.inverse {
+  background-color: #fff;
+}
+/* line 167, ../sass/layout/_layout-out.scss */
+.main-header .navbar.inverse nav ul li:after {
+  color: #757575;
+}
+/* line 171, ../sass/layout/_layout-out.scss */
+.main-header .navbar.inverse nav ul a {
+  color: #757575;
+}
+/* line 174, ../sass/layout/_layout-out.scss */
+.main-header .navbar.inverse nav ul .outline-btn {
+  color: #32B67A;
+  border-color: #32B67A;
+}
+/* line 177, ../sass/layout/_layout-out.scss */
+.main-header .navbar.inverse nav ul .outline-btn:hover {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 185, ../sass/layout/_layout-out.scss */
+.main-header .navbar.collapsed {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+}
+/* line 195, ../sass/layout/_layout-out.scss */
+.main-header .navbar.collapsed nav ul li:after {
+  color: #757575;
+}
+/* line 199, ../sass/layout/_layout-out.scss */
+.main-header .navbar.collapsed nav ul a {
+  color: #757575;
+}
+/* line 202, ../sass/layout/_layout-out.scss */
+.main-header .navbar.collapsed nav ul .outline-btn {
+  color: #32B67A;
+  border-color: #32B67A;
+}
+/* line 205, ../sass/layout/_layout-out.scss */
+.main-header .navbar.collapsed nav ul .outline-btn:hover {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 213, ../sass/layout/_layout-out.scss */
+.main-header .navbar .logo {
+  max-width: 144px;
+}
+/* line 217, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+/* line 221, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul li:after {
+  content: "|";
+  color: #fff;
+}
+/* line 226, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul li:last-of-type:after {
+  content: " ";
+  display: none;
+}
+@media (max-width: 600px) {
+  /* line 220, ../sass/layout/_layout-out.scss */
+  .main-header .navbar nav ul li {
+    display: none;
+  }
+  /* line 233, ../sass/layout/_layout-out.scss */
+  .main-header .navbar nav ul li:last-of-type {
+    display: block;
+  }
+  /* line 235, ../sass/layout/_layout-out.scss */
+  .main-header .navbar nav ul li:last-of-type a {
+    margin-right: 0;
+  }
+}
+/* line 241, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* line 247, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul .outline-btn {
+  padding: 3px 15px;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  transition: all 0.3s ease-in-out;
+}
+/* line 252, ../sass/layout/_layout-out.scss */
+.main-header .navbar nav ul .outline-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*=====================
+	footer Styles 
+=======================*/
+/* line 264, ../sass/layout/_layout-out.scss */
+.main-footer {
+  background-image: linear-gradient(-180deg, #323D53 30%, #6E6F71 150%);
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  /* line 264, ../sass/layout/_layout-out.scss */
+  .main-footer {
+    padding: 40px 60px;
+  }
+}
+/* line 270, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  /* line 270, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-top {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 992px) {
+  /* line 270, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  /* line 281, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-top .menu {
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 285, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-top .menu {
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+/* line 289, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu h4 {
+  color: #fff;
+}
+/* line 292, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 295, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu ul li {
+  font-size: 12px;
+  line-height: 28px;
+}
+/* line 298, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu ul li a {
+  color: #fff;
+}
+/* line 304, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu:nth-child(1) .highlight {
+  font-weight: 700;
+  color: #32B67A;
+}
+/* line 310, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu:nth-child(2) .highlight {
+  font-weight: 700;
+  color: #48affb;
+}
+/* line 316, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu:nth-child(3) .highlight {
+  font-weight: 700;
+  color: #fcdc01;
+}
+/* line 322, ../sass/layout/_layout-out.scss */
+.main-footer .footer-top .menu:nth-child(4) .highlight {
+  font-weight: 700;
+  color: #F06260;
+}
+/* line 329, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (min-width: 1200px) {
+  /* line 329, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  /* line 329, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 769px) {
+  /* line 329, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* line 342, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social {
+  -ms-flex-preferred-size: 33.3333%;
+          -webkit-flex-basis: 33.3333%;
+          flex-basis: 33.3333%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  /* line 342, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom .social {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media (max-width: 769px) {
+  /* line 342, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom .social {
+    margin-bottom: 20px;
+  }
+}
+/* line 351, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+/* line 360, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a.twitter-icon {
+  fill: #28A9E0;
+}
+/* line 363, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a.linkedin-icon {
+  fill: #0177B5;
+}
+/* line 366, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a.facebook-icon {
+  fill: #3C5899;
+}
+/* line 369, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a .footer-icon {
+  width: 25px;
+  height: 25px;
+}
+/* line 373, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 375, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a:hover.twitter-icon {
+  background-color: #28A9E0;
+  fill: #fff;
+}
+/* line 379, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a:hover.linkedin-icon {
+  background-color: #0177B5;
+  fill: #fff;
+}
+/* line 383, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .social a:hover.facebook-icon {
+  background-color: #3C5899;
+  fill: #fff;
+}
+/* line 390, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .apps {
+  -ms-flex-preferred-size: 33.3333%;
+          -webkit-flex-basis: 33.3333%;
+          flex-basis: 33.3333%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  /* line 390, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom .apps {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media (max-width: 769px) {
+  /* line 390, ../sass/layout/_layout-out.scss */
+  .main-footer .footer-bottom .apps {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* line 400, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .apps a {
+  display: inline-block;
+}
+/* line 402, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .apps a:first-of-type {
+  margin-right: 15px;
+}
+/* line 405, ../sass/layout/_layout-out.scss */
+.main-footer .footer-bottom .apps a img {
+  max-width: 150px;
+}
+
+/*=====================
+	form-control Styles 
+=======================*/
+/* line 415, ../sass/layout/_layout-out.scss */
+.form-group {
+  margin-bottom: 20px;
+}
+/* line 417, ../sass/layout/_layout-out.scss */
+.form-group .control-label {
+  display: inline-block;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+/* line 422, ../sass/layout/_layout-out.scss */
+.form-group .form-control {
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+/* line 429, ../sass/layout/_layout-out.scss */
+.form-group .form-control:focus {
+  border-color: #949494;
+}
+/* line 433, ../sass/layout/_layout-out.scss */
+.form-group .help-text {
+  color: #949494;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+/* line 439, ../sass/layout/_layout-out.scss */
+.form-group.has-error .help-text, .form-group.has-error .control-label {
+  color: #F06260;
+}
+/* line 442, ../sass/layout/_layout-out.scss */
+.form-group.has-error .form-control {
+  border: 1px solid #F06260;
+}
+/* line 444, ../sass/layout/_layout-out.scss */
+.form-group.has-error .form-control:focus {
+  border-color: #ec3431;
+}
+/* line 450, ../sass/layout/_layout-out.scss */
+.form-group.has-success .help-text, .form-group.has-success .control-label {
+  color: #32B67A;
+}
+/* line 453, ../sass/layout/_layout-out.scss */
+.form-group.has-success .form-control {
+  border: 1px solid #32B67A;
+}
+/* line 455, ../sass/layout/_layout-out.scss */
+.form-group.has-success .form-control:focus {
+  border-color: #278e5f;
+}
+
+/*=============================
+	Reusable sections Styles 
+===============================*/
+/* line 464, ../sass/layout/_layout-out.scss */
+.big-cta-with-img {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+/* line 469, ../sass/layout/_layout-out.scss */
+.big-cta-with-img .content {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+/* line 474, ../sass/layout/_layout-out.scss */
+.big-cta-with-img .content .extrabold-heading {
+  margin-top: 36px;
+}
+/* line 476, ../sass/layout/_layout-out.scss */
+.big-cta-with-img .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 484, ../sass/layout/_layout-out.scss */
+  .big-cta-with-img .content .extrabold-heading:after {
+    display: none !important;
+  }
+}
+/* line 489, ../sass/layout/_layout-out.scss */
+.big-cta-with-img .content p {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+/* line 493, ../sass/layout/_layout-out.scss */
+.big-cta-with-img .content a {
+  color: #FFCA45;
+  font-weight: 700;
+}
+
+/* line 500, ../sass/layout/_layout-out.scss */
+.animated-cta {
+  padding: 60px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 503, ../sass/layout/_layout-out.scss */
+.animated-cta img {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.14);
+}
+/* line 506, ../sass/layout/_layout-out.scss */
+.animated-cta .content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+/* line 509, ../sass/layout/_layout-out.scss */
+.animated-cta .content p {
+  line-height: 24px;
+}
+
+/* line 515, ../sass/layout/_layout-out.scss */
+.two-icons {
+  padding: 60px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 519, ../sass/layout/_layout-out.scss */
+.two-icons .content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  /* line 519, ../sass/layout/_layout-out.scss */
+  .two-icons .content {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* line 531, ../sass/layout/_layout-out.scss */
+.two-icons .content .img-holder {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  /* line 531, ../sass/layout/_layout-out.scss */
+  .two-icons .content .img-holder {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+/* line 540, ../sass/layout/_layout-out.scss */
+.two-icons .content .img-holder img {
+  margin-right: 30px;
+  max-width: 160px;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  object-fit: scale-down;
+}
+@media (max-width: 767px) {
+  /* line 540, ../sass/layout/_layout-out.scss */
+  .two-icons .content .img-holder img {
+    -ms-flex-item-align: center;
+            -webkit-align-self: center;
+            align-self: center;
+    max-width: 100%;
+    margin-right: 0;
+    padding: 40px;
+  }
+}
+/* line 552, ../sass/layout/_layout-out.scss */
+.two-icons .content .img-holder .desc {
+  max-width: 235px;
+  color: #4d4d4d;
+}
+/* line 555, ../sass/layout/_layout-out.scss */
+.two-icons .content .img-holder .desc h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+/* line 560, ../sass/layout/_layout-out.scss */
+.two-icons .content .img-holder .desc p {
+  margin-top: 0;
+  line-height: 22px;
+}
+
+/* line 569, ../sass/layout/_layout-out.scss */
+.feature-screens {
+  position: relative;
+  padding: 60px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 574, ../sass/layout/_layout-out.scss */
+.feature-screens .feature {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  padding: 0 20px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 960px;
+}
+/* line 581, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-desc {
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  margin-right: 40px;
+}
+/* line 584, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-desc h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  /* line 584, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature .feature-desc h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+/* line 594, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-desc a {
+  color: #32B67A;
+  font-weight: 700;
+}
+/* line 598, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-desc p {
+  line-height: 24px;
+  margin-top: 0;
+}
+/* line 602, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-desc .text-highlight {
+  color: #32B67A;
+}
+/* line 607, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-screen {
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 612, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-screen img {
+  -ms-flex-item-align: center;
+          -webkit-align-self: center;
+          align-self: center;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  object-fit: scale-down;
+}
+@media (min-width: 769px) {
+  /* line 619, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature .feature-screen img {
+    max-width: 400px;
+    max-height: 230px;
+  }
+}
+/* line 624, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-screen.center-full {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 628, ../sass/layout/_layout-out.scss */
+.feature-screens .feature .feature-screen.center-full img {
+  margin: auto !important;
+}
+@media (max-width: 769px) {
+  /* line 635, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature .feature-desc {
+    margin: 0 !important;
+  }
+  /* line 638, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature .feature-screen {
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+@media (min-width: 769px) {
+  /* line 574, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature {
+    margin: 0 auto;
+    padding: 0;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* line 647, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature .feature-screen img {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+  }
+  /* line 655, ../sass/layout/_layout-out.scss */
+  .feature-screens .feature.inverse .feature-screen img {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+/* line 664, ../sass/layout/_layout-out.scss */
+.feature-screens .feature.inverse {
+  margin-top: 60px;
+}
+/* line 666, ../sass/layout/_layout-out.scss */
+.feature-screens .feature.inverse .feature-screen {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+/* line 669, ../sass/layout/_layout-out.scss */
+.feature-screens .feature.inverse .feature-desc {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+/* line 677, ../sass/layout/_layout-out.scss */
+.feature-highlights {
+  position: relative;
+  padding: 60px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 682, ../sass/layout/_layout-out.scss */
+.feature-highlights .features {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 960px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 769px) {
+  /* line 682, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  /* line 690, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features .feature {
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    padding-bottom: 40px;
+  }
+  /* line 693, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features .feature img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 697, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features .feature:nth-of-type(1n) {
+    margin-left: 0;
+  }
+  /* line 700, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features .feature:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 706, ../sass/layout/_layout-out.scss */
+  .feature-highlights .features .feature {
+    -webkit-flex: 1 1 70%;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+  }
+}
+/* line 710, ../sass/layout/_layout-out.scss */
+.feature-highlights .features .feature {
+  margin: 0 15px;
+  -ms-flex-preferred-size: 40%;
+          -webkit-flex-basis: 40%;
+          flex-basis: 40%;
+  min-width: 1px;
+}
+/* line 714, ../sass/layout/_layout-out.scss */
+.feature-highlights .features .feature img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 722, ../sass/layout/_layout-out.scss */
+.feature-highlights .features .feature p {
+  line-height: 22px;
+}
+/* line 725, ../sass/layout/_layout-out.scss */
+.feature-highlights .features .feature a {
+  font-weight: 700;
+}
+
+/* line 732, ../sass/layout/_layout-out.scss */
+.tools-combo {
+  position: relative;
+  padding: 60px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 736, ../sass/layout/_layout-out.scss */
+.tools-combo img {
+  max-width: 500px;
+  padding: 0 20px;
+  width: 100%;
+}
+/* line 741, ../sass/layout/_layout-out.scss */
+.tools-combo .feature-title .extrabold-heading {
+  margin-bottom: 60px;
+}
+/* line 744, ../sass/layout/_layout-out.scss */
+.tools-combo .image-container {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 748, ../sass/layout/_layout-out.scss */
+.tools-combo .image-container img {
+  max-width: 100%;
+}
+/* line 751, ../sass/layout/_layout-out.scss */
+.tools-combo .image-container .logo-image {
+  max-width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* line 759, ../sass/layout/_layout-out.scss */
+.tools-combo .tools-desc {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+/* line 763, ../sass/layout/_layout-out.scss */
+.tools-combo .tools-desc .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/magic-ball.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 775, ../sass/layout/_layout-out.scss */
+  .tools-combo .tools-desc .extrabold-heading:after {
+    display: none !important;
+  }
+}
+/* line 779, ../sass/layout/_layout-out.scss */
+.tools-combo .tools-desc p {
+  max-width: 442px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: left;
+}
+/* line 785, ../sass/layout/_layout-out.scss */
+.tools-combo .tools-desc p a {
+  color: #FFCA45;
+  font-weight: 700;
+}
+
+/* line 793, ../sass/layout/_layout-out.scss */
+.case-study-banner {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 800, ../sass/layout/_layout-out.scss */
+.case-study-banner .content {
+  padding: 60px 20px;
+}
+@media (min-width: 1400px) {
+  /* line 800, ../sass/layout/_layout-out.scss */
+  .case-study-banner .content {
+    padding: 80px 60px;
+    margin-left: 14%;
+  }
+}
+/* line 806, ../sass/layout/_layout-out.scss */
+.case-study-banner .content h1 {
+  max-width: 500px;
+}
+/* line 809, ../sass/layout/_layout-out.scss */
+.case-study-banner .content p {
+  max-width: 400px;
+  line-height: 28px;
+}
+/* line 815, ../sass/layout/_layout-out.scss */
+.case-study-banner .stat-box-container {
+  background: linear-gradient(-180deg, #323d53 0%, #6e6f71 100%);
+  color: #fff;
+  width: 100%;
+  padding: 40px 4%;
+}
+@media (min-width: 1400px) {
+  /* line 815, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container {
+    padding: 50px 4%;
+  }
+}
+/* line 826, ../sass/layout/_layout-out.scss */
+.case-study-banner .stat-box-container .stat-box-wrap {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 840px) {
+  /* line 826, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container .stat-box-wrap {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 832, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container .stat-box-wrap .stat-box {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1370px) {
+  /* line 826, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container .stat-box-wrap {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 840px) {
+  /* line 840, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container .stat-box-wrap .stat-box {
+    max-width: 300px;
+  }
+}
+/* line 844, ../sass/layout/_layout-out.scss */
+.case-study-banner .stat-box-container .stat-box-wrap .stat-box h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (max-width: 481px) {
+  /* line 844, ../sass/layout/_layout-out.scss */
+  .case-study-banner .stat-box-container .stat-box-wrap .stat-box h3 {
+    font-size: 18px;
+  }
+}
+/* line 852, ../sass/layout/_layout-out.scss */
+.case-study-banner .stat-box-container .stat-box-wrap .stat-box p {
+  line-height: 28px;
+  margin: 0;
+}
+
+/* line 861, ../sass/layout/_layout-out.scss */
+.case-study-start {
+  padding: 100px 20px;
+}
+/* line 863, ../sass/layout/_layout-out.scss */
+.case-study-start .content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+/* line 866, ../sass/layout/_layout-out.scss */
+.case-study-start .content .date {
+  margin: 0;
+}
+/* line 869, ../sass/layout/_layout-out.scss */
+.case-study-start .content .extrabold-heading {
+  text-align: center;
+  margin-top: 0;
+}
+/* line 872, ../sass/layout/_layout-out.scss */
+.case-study-start .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 879, ../sass/layout/_layout-out.scss */
+.case-study-start .content p {
+  line-height: 28px;
+}
+
+/* line 885, ../sass/layout/_layout-out.scss */
+.case-study-suggest {
+  padding: 60px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 888, ../sass/layout/_layout-out.scss */
+.case-study-suggest .title {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  color: #32B67A;
+}
+/* line 893, ../sass/layout/_layout-out.scss */
+.case-study-suggest .title .extrabold-heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+/* line 897, ../sass/layout/_layout-out.scss */
+.case-study-suggest .title .date {
+  text-align: left;
+  margin: 0;
+}
+/* line 902, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  /* line 902, ../sass/layout/_layout-out.scss */
+  .case-study-suggest .content {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+/* line 915, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .img-container {
+  -ms-flex-preferred-size: 40%;
+          -webkit-flex-basis: 40%;
+          flex-basis: 40%;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  /* line 915, ../sass/layout/_layout-out.scss */
+  .case-study-suggest .content .img-container {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* line 923, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .img-container img {
+  max-width: 100%;
+}
+/* line 927, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .suggestions {
+  -ms-flex-preferred-size: 60%;
+          -webkit-flex-basis: 60%;
+          flex-basis: 60%;
+}
+/* line 931, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .suggestion-box h3 {
+  font-size: 24px;
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+@media (max-width: 481px) {
+  /* line 931, ../sass/layout/_layout-out.scss */
+  .case-study-suggest .content .suggestion-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+/* line 940, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .suggestion-box p {
+  line-height: 24px;
+  margin: 0;
+}
+/* line 943, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .suggestion-box p + h3 {
+  margin-top: 40px;
+}
+/* line 946, ../sass/layout/_layout-out.scss */
+.case-study-suggest .content .suggestion-box p .text-highlight {
+  color: #32B67A;
+}
+
+/* line 954, ../sass/layout/_layout-out.scss */
+.case-study-tools {
+  padding: 60px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 957, ../sass/layout/_layout-out.scss */
+.case-study-tools .title {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  color: #32B67A;
+}
+/* line 962, ../sass/layout/_layout-out.scss */
+.case-study-tools .title .extrabold-heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+/* line 966, ../sass/layout/_layout-out.scss */
+.case-study-tools .title .date {
+  text-align: left;
+  margin: 0;
+}
+/* line 970, ../sass/layout/_layout-out.scss */
+.case-study-tools .title p {
+  line-height: 28px;
+}
+/* line 974, ../sass/layout/_layout-out.scss */
+.case-study-tools .image-box {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+@media (max-width: 481px) {
+  /* line 974, ../sass/layout/_layout-out.scss */
+  .case-study-tools .image-box {
+    padding: 40px 0;
+  }
+}
+/* line 981, ../sass/layout/_layout-out.scss */
+.case-study-tools .image-box > img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 987, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 990, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc .extrabold-heading {
+  text-align: center;
+  color: #4d4d4d;
+}
+/* line 993, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 1000, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc .testimonial {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 1004, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc .testimonial .user {
+  margin-right: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+/* line 1013, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc .testimonial .user > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* line 1021, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc p {
+  max-width: 570px;
+  margin: 0;
+  line-height: 28px;
+}
+/* line 1025, ../sass/layout/_layout-out.scss */
+.case-study-tools .tools-desc p a {
+  color: #32B67A;
+  font-weight: 600;
+}
+
+/* line 1033, ../sass/layout/_layout-out.scss */
+.case-study-conclusion {
+  padding: 120px 20px;
+}
+/* line 1035, ../sass/layout/_layout-out.scss */
+.case-study-conclusion .content {
+  max-width: 610px;
+  margin: 0 auto;
+  color: #fff;
+}
+/* line 1039, ../sass/layout/_layout-out.scss */
+.case-study-conclusion .content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 222px;
+  width: 100%;
+}
+/* line 1045, ../sass/layout/_layout-out.scss */
+.case-study-conclusion .content .extrabold-heading {
+  margin-top: 100px;
+  margin-bottom: 36px;
+}
+/* line 1048, ../sass/layout/_layout-out.scss */
+.case-study-conclusion .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/rocket.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 1060, ../sass/layout/_layout-out.scss */
+.case-study-conclusion .content p {
+  line-height: 28px;
+}
+
+/* line 1066, ../sass/layout/_layout-out.scss */
+.road-cta {
+  background-image: url(/img/homepage/cta-road-bg.svg);
+  background-size: cover;
+  min-height: 400px;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 1074, ../sass/layout/_layout-out.scss */
+.road-cta.inverse {
+  background-image: url(/img/homepage/cta-road-bg-inverse.svg);
+}
+@media (max-width: 600px) {
+  /* line 1066, ../sass/layout/_layout-out.scss */
+  .road-cta {
+    background-image: none !important;
+    min-height: 350px;
+  }
+}
+/* line 1081, ../sass/layout/_layout-out.scss */
+.road-cta .cta-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+/* line 1084, ../sass/layout/_layout-out.scss */
+.road-cta .cta-content .cta-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+/* line 1088, ../sass/layout/_layout-out.scss */
+.road-cta .cta-content .cta-title h1 {
+  margin: 0;
+}
+/* line 1091, ../sass/layout/_layout-out.scss */
+.road-cta .cta-content .cta-title .btn {
+  margin-left: 20px;
+  min-width: auto;
+}
+@media (max-width: 767px) {
+  /* line 1091, ../sass/layout/_layout-out.scss */
+  .road-cta .cta-content .cta-title .btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 1100, ../sass/layout/_layout-out.scss */
+  .road-cta .cta-content .cta-title.full {
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1084, ../sass/layout/_layout-out.scss */
+  .road-cta .cta-content .cta-title {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 1105, ../sass/layout/_layout-out.scss */
+  .road-cta .cta-content .cta-title h1 {
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+  }
+}
+/* line 1112, ../sass/layout/_layout-out.scss */
+.road-cta .cta-content p {
+  margin: 0;
+  line-height: 36px;
+}
+@media (max-width: 767px) {
+  /* line 1112, ../sass/layout/_layout-out.scss */
+  .road-cta .cta-content p {
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file imports styles for all outer pages.
+
+=====================================================*/
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 16 January 2016
+Description : This file consists styles for login page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_login.scss */
+.login-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #323D53;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 992px) {
+  /* line 18, ../sass/pages_out/_login.scss */
+  .login-section .half-oval {
+    bottom: -15%;
+    height: 80%;
+  }
+}
+/* line 24, ../sass/pages_out/_login.scss */
+.login-section .content {
+  position: relative;
+  z-index: 6;
+}
+/* line 27, ../sass/pages_out/_login.scss */
+.login-section .content .content-box {
+  min-width: 450px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+@media (max-width: 460px) {
+  /* line 27, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box {
+    min-width: auto;
+    padding: 15px;
+  }
+}
+@media (max-height: 700px) {
+  /* line 27, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box {
+    margin-top: 80px;
+  }
+}
+/* line 39, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .login-head {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px dashed #dddddd;
+}
+@media (max-width: 480px) {
+  /* line 39, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .login-head {
+    font-size: 16px;
+  }
+}
+/* line 49, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .btn-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+@media (max-width: 480px) {
+  /* line 49, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .btn-group {
+    margin: 40px 0;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* line 59, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .btn-group .btn {
+  padding: 12px 24px;
+}
+/* line 63, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .btn-with-icon {
+  margin-right: 30px;
+}
+/* line 66, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .utility-bar {
+  text-align: center;
+  margin: 0 -15px;
+}
+/* line 69, ../sass/pages_out/_login.scss */
+.login-section .content .content-box .utility-bar a {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (min-width: 480px) {
+  /* line 74, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .utility-bar a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  /* line 79, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .utility-bar a:last-of-type {
+    margin-right: 0;
+  }
+  /* line 81, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .utility-bar a:last-of-type:after {
+    display: none;
+    content: "";
+  }
+  /* line 86, ../sass/pages_out/_login.scss */
+  .login-section .content .content-box .utility-bar a:after {
+    content: "•";
+    font-size: 20px;
+    display: inline-block;
+    color: #dddddd;
+    position: absolute;
+    top: -3px;
+    right: -15px;
+  }
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 17 January 2016
+Description : This file contain style for signup page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_signup.scss */
+.signup-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #32B67A;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 992px) {
+  /* line 18, ../sass/pages_out/_signup.scss */
+  .signup-section .half-oval {
+    bottom: -15%;
+    height: 80%;
+  }
+}
+/* line 24, ../sass/pages_out/_signup.scss */
+.signup-section .content {
+  position: relative;
+  z-index: 6;
+}
+/* line 27, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box {
+  width: 460px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+@media (max-height: 700px) {
+  /* line 27, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 470px) {
+  /* line 27, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+  }
+}
+/* line 41, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .signup-head {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px dashed #32B67A;
+  color: #32B67A;
+}
+@media (max-width: 480px) {
+  /* line 41, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .signup-head {
+    font-size: 16px;
+  }
+}
+/* line 52, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .signup-name {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 57, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .signup-name .group label {
+  margin-bottom: 0;
+}
+/* line 60, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .signup-name .group span {
+  display: inline-block;
+  margin-bottom: 3px;
+  color: #dddddd;
+}
+/* line 67, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .btn-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  /* line 67, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .btn-group {
+    margin: 40px 0;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* line 77, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .btn-group .btn {
+  padding: 12px 24px;
+}
+/* line 81, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .btn-with-icon {
+  margin-right: 20px;
+}
+/* line 84, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .utility-bar {
+  text-align: center;
+  margin: 0 -15px;
+}
+/* line 87, ../sass/pages_out/_signup.scss */
+.signup-section .content .content-box .utility-bar a {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (min-width: 480px) {
+  /* line 92, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .utility-bar a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  /* line 97, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .utility-bar a:last-of-type {
+    margin-right: 0;
+  }
+  /* line 99, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .utility-bar a:last-of-type:after {
+    display: none;
+    content: "";
+  }
+  /* line 104, ../sass/pages_out/_signup.scss */
+  .signup-section .content .content-box .utility-bar a:after {
+    content: "•";
+    font-size: 20px;
+    display: inline-block;
+    color: #dddddd;
+    position: absolute;
+    top: -3px;
+    right: -15px;
+  }
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 16 January 2016
+Description : This file consists styles for forget password and email verification pages.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_forget-password.scss */
+.verification-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #323D53;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 992px) {
+  /* line 18, ../sass/pages_out/_forget-password.scss */
+  .verification-section .half-oval {
+    bottom: -15%;
+    height: 80%;
+  }
+}
+/* line 24, ../sass/pages_out/_forget-password.scss */
+.verification-section .content {
+  position: relative;
+  z-index: 6;
+}
+/* line 27, ../sass/pages_out/_forget-password.scss */
+.verification-section .content .content-box {
+  min-width: 450px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+@media (max-width: 460px) {
+  /* line 27, ../sass/pages_out/_forget-password.scss */
+  .verification-section .content .content-box {
+    min-width: auto;
+    padding: 15px;
+  }
+}
+/* line 36, ../sass/pages_out/_forget-password.scss */
+.verification-section .content .content-box .section-head {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px dashed #ddd;
+}
+@media (max-width: 480px) {
+  /* line 36, ../sass/pages_out/_forget-password.scss */
+  .verification-section .content .content-box .section-head {
+    font-size: 16px;
+  }
+}
+/* line 46, ../sass/pages_out/_forget-password.scss */
+.verification-section .content .content-box .btn-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 51, ../sass/pages_out/_forget-password.scss */
+.verification-section .content .content-box .utility-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 16 January 2016
+Description : This file consists styles for error page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_error.scss */
+.error-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #F06260;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 992px) {
+  /* line 19, ../sass/pages_out/_error.scss */
+  .error-section .half-oval {
+    bottom: -15%;
+    height: 80%;
+  }
+}
+/* line 25, ../sass/pages_out/_error.scss */
+.error-section .content {
+  position: relative;
+  z-index: 6;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+@media (max-height: 700px) {
+  /* line 25, ../sass/pages_out/_error.scss */
+  .error-section .content {
+    margin-top: 80px;
+  }
+}
+/* line 34, ../sass/pages_out/_error.scss */
+.error-section .content img {
+  max-width: 470px;
+  width: 100%;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 39, ../sass/pages_out/_error.scss */
+.error-section .content .error-desc {
+  line-height: 28px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file consists styles for Gridle homepage
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_home.scss */
+.feature-title {
+  text-align: center;
+  color: #32B67A;
+  padding: 0 20px;
+}
+/* line 13, ../sass/pages_out/_home.scss */
+.feature-title h2 {
+  font-size: 24px;
+}
+/* line 16, ../sass/pages_out/_home.scss */
+.feature-title p {
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* line 24, ../sass/pages_out/_home.scss */
+.home-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(-180deg, #323D53 0%, #6E6F71 100%);
+}
+/* line 30, ../sass/pages_out/_home.scss */
+.home-banner.hr-home {
+  background-image: linear-gradient(-180deg, #39adcc 0%, #3482ba 100%);
+}
+/* line 32, ../sass/pages_out/_home.scss */
+.home-banner.hr-home .content .extrabold-heading:after {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/necktie.svg);
+  vertical-align: middle;
+}
+/* line 41, ../sass/pages_out/_home.scss */
+.home-banner.it-home {
+  background-image: linear-gradient(120deg, #3023ae 0%, #c86dd7 100%);
+}
+/* line 43, ../sass/pages_out/_home.scss */
+.home-banner.it-home .content .extrabold-heading:after {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/comet.svg);
+  vertical-align: middle;
+}
+/* line 52, ../sass/pages_out/_home.scss */
+.home-banner.design-home {
+  background-image: linear-gradient(-180deg, #fad961 0%, #f76b1c 100%);
+}
+/* line 54, ../sass/pages_out/_home.scss */
+.home-banner.design-home .content .extrabold-heading:after {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/snow.svg);
+  vertical-align: middle;
+}
+/* line 63, ../sass/pages_out/_home.scss */
+.home-banner.deal-home {
+  background-image: linear-gradient(-180deg, #429321 0%, #b4ec51 100%);
+}
+/* line 65, ../sass/pages_out/_home.scss */
+.home-banner.deal-home .content .extrabold-heading:after {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/celebrating-hand.svg);
+}
+/* line 73, ../sass/pages_out/_home.scss */
+.home-banner.video-guides {
+  background-image: linear-gradient(-180deg, #f857a6 0%, #ff5858 100%);
+}
+/* line 76, ../sass/pages_out/_home.scss */
+.home-banner.video-guides .content .extrabold-heading:after {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/ambulance.svg);
+}
+/* line 84, ../sass/pages_out/_home.scss */
+.home-banner .content {
+  position: relative;
+  min-height: 100vh;
+  z-index: 5;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 96, ../sass/pages_out/_home.scss */
+.home-banner .content .play-icon-wrapper {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 40px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 105, ../sass/pages_out/_home.scss */
+.home-banner .content .play {
+  transition: all 0.2s ease-in-out;
+}
+/* line 107, ../sass/pages_out/_home.scss */
+.home-banner .content .play .paly-icon-shape {
+  transition: all 0.15s ease-in-out;
+}
+/* line 111, ../sass/pages_out/_home.scss */
+.home-banner .content .play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 113, ../sass/pages_out/_home.scss */
+.home-banner .content .play:hover .paly-icon-shape {
+  opacity: 1;
+}
+/* line 115, ../sass/pages_out/_home.scss */
+.home-banner .content .play:hover .paly-icon-shape.triangle {
+  fill: #979797;
+}
+/* line 120, ../sass/pages_out/_home.scss */
+.home-banner .content .extrabold-heading {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+@media (max-width: 769px) {
+  /* line 120, ../sass/pages_out/_home.scss */
+  .home-banner .content .extrabold-heading {
+    font-size: 32px;
+  }
+  /* line 125, ../sass/pages_out/_home.scss */
+  .home-banner .content .extrabold-heading:after {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* line 130, ../sass/pages_out/_home.scss */
+.home-banner .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/home-with-tree.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 130, ../sass/pages_out/_home.scss */
+  .home-banner .content .extrabold-heading:after {
+    display: none !important;
+  }
+}
+/* line 144, ../sass/pages_out/_home.scss */
+.home-banner .content .banner-desc {
+  line-height: 36px;
+  max-width: 660px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+@media (max-width: 769px) {
+  /* line 144, ../sass/pages_out/_home.scss */
+  .home-banner .content .banner-desc {
+    padding: 20px;
+    line-height: 24px;
+  }
+}
+/* line 156, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box {
+  background-color: rgba(0, 0, 0, 0.22);
+  width: 100%;
+  padding: 40px 4%;
+  text-align: left;
+  margin-top: auto;
+}
+@media (min-width: 1400px) {
+  /* line 156, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box {
+    padding: 60px 4%;
+  }
+}
+/* line 165, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .actions {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 840px) {
+  /* line 165, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box .actions {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1370px) {
+  /* line 165, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box .actions {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+/* line 177, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .actions p {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-weight: 700;
+  margin: 0 10px;
+}
+@media (max-width: 840px) {
+  /* line 177, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box .actions p {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+/* line 186, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .actions .btn {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/* line 190, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .or {
+  padding: 8px 10px;
+  margin: 0 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  max-width: 37px;
+  position: relative;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (max-width: 8409px) {
+  /* line 190, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box .or {
+    margin: 20px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 190, ../sass/pages_out/_home.scss */
+  .home-banner .content .cta-box .or {
+    margin: 0 60px;
+  }
+}
+/* line 204, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .or:before {
+  content: "—";
+  position: absolute;
+  left: -14px;
+  right: auto;
+}
+/* line 210, ../sass/pages_out/_home.scss */
+.home-banner .content .cta-box .or:after {
+  content: "—";
+  position: absolute;
+  left: auto;
+  right: -14px;
+}
+
+/* line 221, ../sass/pages_out/_home.scss */
+.home-how-it-works {
+  background-color: #32B67A;
+  color: #fff;
+  padding: 60px 20px;
+}
+/* line 225, ../sass/pages_out/_home.scss */
+.home-how-it-works .extrabold-heading:after {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/heart.svg);
+}
+
+/* line 233, ../sass/pages_out/_home.scss */
+.home-top-cta {
+  background-color: #4385f5;
+}
+/* line 235, ../sass/pages_out/_home.scss */
+.home-top-cta .cta-content {
+  max-width: 820px;
+}
+
+/* line 244, ../sass/pages_out/_home.scss */
+.home-feature-highlight .features .feature:nth-of-type(1) a {
+  color: #FFCA45;
+}
+/* line 249, ../sass/pages_out/_home.scss */
+.home-feature-highlight .features .feature:nth-of-type(2) a {
+  color: #4385f5;
+}
+/* line 254, ../sass/pages_out/_home.scss */
+.home-feature-highlight .features .feature:nth-of-type(3) a {
+  color: #3023ae;
+}
+/* line 259, ../sass/pages_out/_home.scss */
+.home-feature-highlight .features .feature:nth-of-type(4) a {
+  color: #32B67A;
+}
+
+/* line 267, ../sass/pages_out/_home.scss */
+.home-status-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+
+/* line 273, ../sass/pages_out/_home.scss */
+.road-cta.home-cta {
+  background-color: #32B67A;
+}
+/* line 275, ../sass/pages_out/_home.scss */
+.road-cta.home-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file consists styles for Gridle for HR page
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_hr-home.scss */
+.hr-how-it-works {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 12, ../sass/pages_out/_hr-home.scss */
+.hr-how-it-works .content .extrabold-heading:after {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/ballpen.svg);
+  vertical-align: middle;
+}
+
+/* line 21, ../sass/pages_out/_hr-home.scss */
+.hr-inverse-animated-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+
+/* line 26, ../sass/pages_out/_hr-home.scss */
+.hr-middle-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 29, ../sass/pages_out/_hr-home.scss */
+.hr-middle-cta .cta-content {
+  max-width: 850px;
+}
+
+/* line 34, ../sass/pages_out/_hr-home.scss */
+.hr-end-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 37, ../sass/pages_out/_hr-home.scss */
+.hr-end-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file consists styles for Gridle for IT page
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_it-home.scss */
+.it-how-it-works {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 12, ../sass/pages_out/_it-home.scss */
+.it-how-it-works .content .extrabold-heading:after {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/package.svg);
+  vertical-align: middle;
+}
+
+/* line 21, ../sass/pages_out/_it-home.scss */
+.it-inverse-animated-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+
+/* line 26, ../sass/pages_out/_it-home.scss */
+.it-middle-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 29, ../sass/pages_out/_it-home.scss */
+.it-middle-cta .cta-content {
+  max-width: 850px;
+}
+
+/* line 34, ../sass/pages_out/_it-home.scss */
+.it-end-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 37, ../sass/pages_out/_it-home.scss */
+.it-end-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file consists styles for Gridle for Design page
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_design-home.scss */
+.design-how-it-works {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 12, ../sass/pages_out/_design-home.scss */
+.design-how-it-works .content .extrabold-heading:after {
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/rainbow.svg);
+  vertical-align: middle;
+}
+
+/* line 21, ../sass/pages_out/_design-home.scss */
+.design-inverse-animated-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+
+/* line 26, ../sass/pages_out/_design-home.scss */
+.design-middle-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 29, ../sass/pages_out/_design-home.scss */
+.design-middle-cta .cta-content {
+  max-width: 850px;
+}
+
+/* line 34, ../sass/pages_out/_design-home.scss */
+.design-end-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 37, ../sass/pages_out/_design-home.scss */
+.design-end-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file consists styles for Gridle for Deal page
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_deal-home.scss */
+.deal-how-it-works {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 12, ../sass/pages_out/_deal-home.scss */
+.deal-how-it-works .content .extrabold-heading:after {
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/victory-hand.svg);
+  vertical-align: middle;
+}
+
+/* line 21, ../sass/pages_out/_deal-home.scss */
+.deal-inverse-animated-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+
+/* line 26, ../sass/pages_out/_deal-home.scss */
+.deal-middle-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 29, ../sass/pages_out/_deal-home.scss */
+.deal-middle-cta .cta-content {
+  max-width: 850px;
+}
+
+/* line 34, ../sass/pages_out/_deal-home.scss */
+.deal-end-cta {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 37, ../sass/pages_out/_deal-home.scss */
+.deal-end-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 21 January 2016
+Description : This file consists file for pricing page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_pricing.scss */
+.pricing-banner {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 17, ../sass/pages_out/_pricing.scss */
+.pricing-banner .extrabold-heading {
+  margin-bottom: 20px;
+}
+/* line 20, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox-wrap {
+  margin-top: 15px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 600px) {
+  /* line 20, ../sass/pages_out/_pricing.scss */
+  .pricing-banner .pricebox-wrap {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* line 29, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox {
+  color: #fff;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  /* line 29, ../sass/pages_out/_pricing.scss */
+  .pricing-banner .pricebox {
+    margin-bottom: 40px;
+  }
+}
+/* line 37, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.basic {
+  background-color: #48affb;
+  margin-right: 80px;
+}
+@media (max-width: 600px) {
+  /* line 37, ../sass/pages_out/_pricing.scss */
+  .pricing-banner .pricebox.basic {
+    margin-right: 0;
+  }
+}
+/* line 43, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.basic .bucks-info {
+  background-color: #44A6EE;
+}
+/* line 45, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.basic .bucks-info:before {
+  background-color: #44A6EE;
+}
+/* line 50, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.enterprise {
+  background-color: #32B67A;
+}
+/* line 52, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.enterprise .bucks-info {
+  background-color: #2FAC73;
+}
+/* line 54, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox.enterprise .bucks-info:before {
+  background-color: #2FAC73;
+}
+/* line 59, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .box-title {
+  text-align: center;
+  padding: 17px;
+  font-size: 24px;
+  margin: 0;
+}
+/* line 65, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .stripe {
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+/* line 71, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 22px 38px 0 38px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+}
+/* line 79, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info {
+  text-align: center;
+  background-color: #48affb;
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* line 87, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  min-height: 30px;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+/* line 97, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info h3 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+  position: relative;
+  z-index: 5;
+}
+/* line 104, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* line 107, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info p small {
+  font-size: 9px;
+  line-height: 22px;
+}
+/* line 112, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info h4 {
+  margin: 0;
+  font-size: 10px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+/* line 117, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info h4 a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 122, ../sass/pages_out/_pricing.scss */
+.pricing-banner .pricebox .bucks-info .text-warning {
+  color: #fcdc01;
+}
+
+/* line 129, ../sass/pages_out/_pricing.scss */
+.road-cta.price-top-cta {
+  background-color: #FFCA45;
+}
+/* line 131, ../sass/pages_out/_pricing.scss */
+.road-cta.price-top-cta .cta-content {
+  max-width: 750px;
+}
+/* line 133, ../sass/pages_out/_pricing.scss */
+.road-cta.price-top-cta .cta-content p {
+  color: #4d4d4d;
+  font-weight: 700;
+}
+/* line 136, ../sass/pages_out/_pricing.scss */
+.road-cta.price-top-cta .cta-content p a {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+
+/* line 145, ../sass/pages_out/_pricing.scss */
+.honest-billing {
+  background-color: #4385f5;
+  color: #fff;
+  padding: 60px 20px 80px;
+}
+/* line 150, ../sass/pages_out/_pricing.scss */
+.honest-billing .content .extrabold-heading {
+  text-align: center;
+}
+/* line 152, ../sass/pages_out/_pricing.scss */
+.honest-billing .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/money-with-wings.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* line 167, ../sass/pages_out/_pricing.scss */
+.pricing-faqs {
+  padding: 60px 20px;
+}
+/* line 170, ../sass/pages_out/_pricing.scss */
+.pricing-faqs .feature-title .extrabold-heading {
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+/* line 174, ../sass/pages_out/_pricing.scss */
+.pricing-faqs .feature-title p {
+  line-height: 28px;
+}
+/* line 178, ../sass/pages_out/_pricing.scss */
+.pricing-faqs .content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 181, ../sass/pages_out/_pricing.scss */
+.pricing-faqs .content .question {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #4385f5;
+}
+@media (max-width: 767px) {
+  /* line 181, ../sass/pages_out/_pricing.scss */
+  .pricing-faqs .content .question {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+/* line 191, ../sass/pages_out/_pricing.scss */
+.pricing-faqs .content .answer {
+  margin-bottom: 34px;
+  line-height: 22px;
+  color: #797979;
+}
+
+/* line 199, ../sass/pages_out/_pricing.scss */
+.price-big-cta {
+  background-color: #FFCA45;
+  padding: 60px 20px;
+}
+/* line 202, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-title {
+  text-align: center;
+}
+/* line 204, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-title .extrabold-heading {
+  color: #fff;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+/* line 209, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-title p {
+  color: #fff;
+  line-height: 28px;
+}
+/* line 214, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-icon {
+  text-align: center;
+}
+/* line 216, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-icon img {
+  max-width: 150px;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 225, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 800px) {
+  /* line 225, ../sass/pages_out/_pricing.scss */
+  .price-big-cta .cta-desc-wrap {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 232, ../sass/pages_out/_pricing.scss */
+  .price-big-cta .cta-desc-wrap .cta-desc {
+    max-width: 100% !important;
+  }
+}
+/* line 236, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc {
+  max-width: 360px;
+}
+/* line 238, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc h3 {
+  font-size: 24px;
+  margin-bottom: 23px;
+  color: #4d4d4d;
+}
+@media (max-width: 800px) {
+  /* line 238, ../sass/pages_out/_pricing.scss */
+  .price-big-cta .cta-desc-wrap .cta-desc h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+/* line 247, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc p {
+  color: #797979;
+  line-height: 22px;
+  margin-top: 0;
+}
+/* line 251, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc p a {
+  font-weight: 700;
+}
+/* line 256, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc:first-of-type a {
+  color: #4385f5;
+}
+/* line 261, ../sass/pages_out/_pricing.scss */
+.price-big-cta .cta-desc-wrap .cta-desc:last-of-type a {
+  color: #32B67A;
+}
+
+/* line 269, ../sass/pages_out/_pricing.scss */
+.road-cta.price-bottom-cta {
+  background-color: #32B67A;
+}
+/* line 271, ../sass/pages_out/_pricing.scss */
+.road-cta.price-bottom-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 22 January 2016
+Description : This file consists styles for how gridle works page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(-180deg, #3023ae 0%, #c86dd7 100%);
+}
+@media (min-width: 1400px) {
+  /* line 16, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .half-oval {
+    bottom: -105%;
+  }
+}
+/* line 21, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content {
+  position: relative;
+  min-height: 100vh;
+  z-index: 5;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 33, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play-icon-wrapper {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 40px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 42, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play {
+  transition: all 0.2s ease-in-out;
+}
+/* line 44, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play .paly-icon-shape {
+  transition: all 0.15s ease-in-out;
+}
+/* line 48, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 50, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play:hover .paly-icon-shape {
+  opacity: 1;
+}
+/* line 52, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .play:hover .paly-icon-shape.triangle {
+  fill: #979797;
+}
+/* line 57, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .extrabold-heading {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+@media (max-width: 769px) {
+  /* line 57, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .extrabold-heading {
+    font-size: 32px;
+  }
+  /* line 62, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .extrabold-heading:after {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* line 67, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/watch.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 67, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .extrabold-heading:after {
+    display: none !important;
+  }
+}
+/* line 81, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .banner-desc {
+  line-height: 36px;
+  max-width: 655px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  /* line 81, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .banner-desc {
+    padding: 0 20px;
+    line-height: 24px;
+  }
+}
+/* line 92, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .cta-box {
+  background-color: rgba(0, 0, 0, 0.22);
+  width: 100%;
+  padding: 40px 4%;
+  text-align: left;
+  margin-top: auto;
+}
+@media (min-width: 1400px) {
+  /* line 92, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .cta-box {
+    padding: 60px 4%;
+  }
+}
+/* line 101, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .cta-box .actions {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 800px) {
+  /* line 101, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .cta-box .actions {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+/* line 109, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .cta-box .actions p {
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+}
+@media (max-width: 800px) {
+  /* line 109, ../sass/pages_out/_how-gridle-works.scss */
+  .how-banner .content .cta-box .actions p {
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* line 121, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .cta-box .actions a {
+  margin-right: 15px;
+}
+/* line 124, ../sass/pages_out/_how-gridle-works.scss */
+.how-banner .content .cta-box .actions img {
+  max-width: 158px;
+}
+
+/* line 132, ../sass/pages_out/_how-gridle-works.scss */
+.how-cta-with-img {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 135, ../sass/pages_out/_how-gridle-works.scss */
+.how-cta-with-img .content {
+  max-width: 650px;
+}
+/* line 137, ../sass/pages_out/_how-gridle-works.scss */
+.how-cta-with-img .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 31px;
+  height: 31px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/crown.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 137, ../sass/pages_out/_how-gridle-works.scss */
+  .how-cta-with-img .content .extrabold-heading:after {
+    display: none !important;
+  }
+}
+
+/* line 155, ../sass/pages_out/_how-gridle-works.scss */
+.how-top-cta {
+  background-color: #9013FE;
+}
+/* line 157, ../sass/pages_out/_how-gridle-works.scss */
+.how-top-cta .cta-content {
+  max-width: 860px;
+}
+/* line 159, ../sass/pages_out/_how-gridle-works.scss */
+.how-top-cta .cta-content a {
+  font-weight: 700;
+  color: #FFCA45;
+}
+/* line 165, ../sass/pages_out/_how-gridle-works.scss */
+.how-top-cta .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  background-image: url(/img/emoji/clap.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 165, ../sass/pages_out/_how-gridle-works.scss */
+  .how-top-cta .extrabold-heading:after {
+    display: none !important;
+  }
+}
+
+/* line 182, ../sass/pages_out/_how-gridle-works.scss */
+.how-bottom-cta {
+  background-color: #4385f5;
+}
+/* line 184, ../sass/pages_out/_how-gridle-works.scss */
+.how-bottom-cta .cta-content {
+  max-width: 820px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 23 January 2016
+Description : This file contains styles for press page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_press.scss */
+.press-banner {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(-180deg, #f76b1c 0%, #fad961 100%);
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 19, ../sass/pages_out/_press.scss */
+.press-banner .content {
+  max-width: 560px;
+}
+/* line 21, ../sass/pages_out/_press.scss */
+.press-banner .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/camera.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  /* line 21, ../sass/pages_out/_press.scss */
+  .press-banner .content .extrabold-heading:after {
+    display: none;
+  }
+}
+/* line 35, ../sass/pages_out/_press.scss */
+.press-banner .content p {
+  line-height: 28px;
+  margin: 0;
+}
+
+/* line 41, ../sass/pages_out/_press.scss */
+.press-mentions {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 45, ../sass/pages_out/_press.scss */
+.press-mentions .title {
+  color: #f5a623;
+  text-align: center;
+  margin-bottom: 36px;
+}
+/* line 50, ../sass/pages_out/_press.scss */
+.press-mentions .mention {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+}
+@media (max-width: 767px) {
+  /* line 50, ../sass/pages_out/_press.scss */
+  .press-mentions .mention {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 58, ../sass/pages_out/_press.scss */
+  .press-mentions .mention .desc {
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+  }
+}
+/* line 63, ../sass/pages_out/_press.scss */
+.press-mentions .mention .icon {
+  margin-right: 5%;
+  -ms-flex-preferred-size: 20%;
+          -webkit-flex-basis: 20%;
+          flex-basis: 20%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  /* line 63, ../sass/pages_out/_press.scss */
+  .press-mentions .mention .icon {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* line 76, ../sass/pages_out/_press.scss */
+.press-mentions .mention .desc {
+  -ms-flex-preferred-size: 75%;
+          -webkit-flex-basis: 75%;
+          flex-basis: 75%;
+}
+@media (max-width: 767px) {
+  /* line 76, ../sass/pages_out/_press.scss */
+  .press-mentions .mention .desc {
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+  }
+}
+/* line 83, ../sass/pages_out/_press.scss */
+.press-mentions .mention h2 {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+/* line 86, ../sass/pages_out/_press.scss */
+.press-mentions .mention h2 a {
+  color: #6E6F71;
+}
+@media (max-width: 767px) {
+  /* line 83, ../sass/pages_out/_press.scss */
+  .press-mentions .mention h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+/* line 94, ../sass/pages_out/_press.scss */
+.press-mentions .mention p {
+  line-height: 22px;
+  margin-top: 0;
+}
+/* line 97, ../sass/pages_out/_press.scss */
+.press-mentions .mention p a {
+  font-weight: 700;
+  margin-top: 8px;
+  display: block;
+}
+
+/* line 106, ../sass/pages_out/_press.scss */
+.press-cta {
+  background-color: #7053C4;
+}
+/* line 109, ../sass/pages_out/_press.scss */
+.press-cta p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 12 January 2016
+Description : This file consists style for career page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_career.scss */
+.career-banner {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(-180deg, #f5515f 0%, #9f041b 100%);
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 19, ../sass/pages_out/_career.scss */
+.career-banner .content {
+  max-width: 560px;
+}
+/* line 21, ../sass/pages_out/_career.scss */
+.career-banner .content .extrabold-heading:after {
+  content: " ";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/glasses.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  /* line 21, ../sass/pages_out/_career.scss */
+  .career-banner .content .extrabold-heading:after {
+    display: none;
+  }
+}
+/* line 35, ../sass/pages_out/_career.scss */
+.career-banner .content p {
+  line-height: 28px;
+  margin: 0;
+}
+/* line 38, ../sass/pages_out/_career.scss */
+.career-banner .content p a {
+  color: #fff;
+}
+
+/* line 45, ../sass/pages_out/_career.scss */
+.career-content {
+  padding: 60px 20px;
+}
+/* line 47, ../sass/pages_out/_career.scss */
+.career-content .content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 50, ../sass/pages_out/_career.scss */
+.career-content .content .title {
+  color: #e64354;
+  text-align: center;
+}
+/* line 54, ../sass/pages_out/_career.scss */
+.career-content .content .career-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  /* line 54, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 61, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box .desc {
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+  }
+}
+/* line 66, ../sass/pages_out/_career.scss */
+.career-content .content .career-box .icon {
+  margin-right: 5%;
+  -ms-flex-preferred-size: 15%;
+          -webkit-flex-basis: 15%;
+          flex-basis: 15%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  /* line 66, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box .icon {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+  }
+  /* line 76, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box .icon img {
+    max-width: 120px;
+  }
+}
+/* line 81, ../sass/pages_out/_career.scss */
+.career-content .content .career-box .desc {
+  -ms-flex-preferred-size: 80%;
+          -webkit-flex-basis: 80%;
+          flex-basis: 80%;
+}
+@media (max-width: 767px) {
+  /* line 81, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box .desc {
+    -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    text-align: center;
+  }
+}
+/* line 89, ../sass/pages_out/_career.scss */
+.career-content .content .career-box h2 {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+@media (max-width: 767px) {
+  /* line 89, ../sass/pages_out/_career.scss */
+  .career-content .content .career-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+/* line 97, ../sass/pages_out/_career.scss */
+.career-content .content .career-box p {
+  line-height: 22px;
+  margin-top: 0;
+}
+
+/* line 104, ../sass/pages_out/_career.scss */
+.career-cta {
+  background-color: #32B67A;
+}
+/* line 106, ../sass/pages_out/_career.scss */
+.career-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file contains styles for contact page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_contact.scss */
+.contact-banner {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-image: linear-gradient(-180deg, #323D53 0%, #6E6F71 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 21, ../sass/pages_out/_contact.scss */
+.contact-banner .content {
+  position: relative;
+  z-index: 6;
+  max-width: 610px;
+}
+/* line 27, ../sass/pages_out/_contact.scss */
+.contact-banner .content img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 32, ../sass/pages_out/_contact.scss */
+.contact-banner .content p {
+  line-height: 28px;
+  margin-top: 0;
+}
+@media (min-width: 767px) {
+  /* line 37, ../sass/pages_out/_contact.scss */
+  .contact-banner .content .btn {
+    margin-left: 40px;
+  }
+}
+
+/* line 43, ../sass/pages_out/_contact.scss */
+.contact-cta {
+  background-color: #7053c4;
+}
+/* line 45, ../sass/pages_out/_contact.scss */
+.contact-cta .cta-content {
+  max-width: 800px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file contains styles for terms and condition page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_terms.scss */
+.terms.of-use {
+  background: linear-gradient(-180deg, #39adcc 0%, #3482ba 100%);
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+/* line 15, ../sass/pages_out/_terms.scss */
+.terms.of-use .content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 18, ../sass/pages_out/_terms.scss */
+.terms.of-use .content .title {
+  text-align: center;
+}
+/* line 22, ../sass/pages_out/_terms.scss */
+.terms.of-use .terms {
+  margin-top: 60px;
+}
+/* line 25, ../sass/pages_out/_terms.scss */
+.terms.of-use .terms .term h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+/* line 29, ../sass/pages_out/_terms.scss */
+.terms.of-use .terms .term p {
+  line-height: 20px;
+  margin: 22px 0;
+}
+/* line 33, ../sass/pages_out/_terms.scss */
+.terms.of-use .terms .term + .term {
+  margin-top: 42px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 3 Febrary 2016 (Night :-)
+Description : This file consists style for ask for demo page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_ask-for-demo.scss */
+.ask-for-demo {
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+/* line 16, ../sass/pages_out/_ask-for-demo.scss */
+.ask-for-demo p {
+  line-height: 28px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 6 February 2016
+Description : This file consists styles for video guidelines page
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_video-guides.scss */
+.video-content {
+  padding: 60px 20px;
+}
+/* line 11, ../sass/pages_out/_video-guides.scss */
+.video-content .content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 14, ../sass/pages_out/_video-guides.scss */
+.video-content .content .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+/* line 17, ../sass/pages_out/_video-guides.scss */
+.video-content .content .title h1 {
+  color: #fe575c;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+/* line 22, ../sass/pages_out/_video-guides.scss */
+.video-content .content .title p {
+  margin: 0;
+  color: #fe585c;
+}
+/* line 27, ../sass/pages_out/_video-guides.scss */
+.video-content .content .tiles {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+/* line 31, ../sass/pages_out/_video-guides.scss */
+.video-content .content .tiles .tile {
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  padding: 20px;
+  margin: 0 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+/* line 38, ../sass/pages_out/_video-guides.scss */
+.video-content .content .tiles .tile:hover {
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+}
+/* line 42, ../sass/pages_out/_video-guides.scss */
+.video-content .content .tiles .tile .desc .desc-title {
+  margin-top: 15px;
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: #4d4d4d;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+/* line 51, ../sass/pages_out/_video-guides.scss */
+.video-content .content .tiles .tile .desc .duration {
+  font-size: 10px;
+  margin: 0;
+  color: #6E6F71;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 30 January 2016
+Description : This file consists styles for design case study page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_design-case-study.scss */
+.design-cs-banner {
+  background: linear-gradient(-180deg, #f76b1c 0%, #fad961 100%);
+  color: #fff;
+}
+
+/* line 14, ../sass/pages_out/_design-case-study.scss */
+.design-cs-start {
+  background-color: #f7c443;
+  color: #4d4d4d;
+}
+/* line 17, ../sass/pages_out/_design-case-study.scss */
+.design-cs-start .date, .design-cs-start .extrabold-heading {
+  color: #fff;
+}
+/* line 20, ../sass/pages_out/_design-case-study.scss */
+.design-cs-start .extrabold-heading:after {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/video-camera.svg);
+}
+
+/* line 31, ../sass/pages_out/_design-case-study.scss */
+.design-cs-tools .tools-desc .extrabold-heading:after {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/cloud-with-rain.svg);
+}
+
+/* line 41, ../sass/pages_out/_design-case-study.scss */
+.design-cs-conclusion {
+  background-color: #48affb;
+}
+
+/* line 45, ../sass/pages_out/_design-case-study.scss */
+.design-cs-cta {
+  background-color: #4385f5;
+}
+/* line 46, ../sass/pages_out/_design-case-study.scss */
+.design-cs-cta .cta-content {
+  max-width: 770px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 1 February 2016
+Description : This file consists styles for IT case study page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_it-case-study.scss */
+.it-cs-banner {
+  background-image: linear-gradient(-180deg, #3023ae 0%, #c86dd7 100%);
+  color: #fff;
+}
+
+/* line 14, ../sass/pages_out/_it-case-study.scss */
+.it-cs-start {
+  background-color: #9013fe;
+  color: #fff;
+}
+/* line 17, ../sass/pages_out/_it-case-study.scss */
+.it-cs-start .extrabold-heading:after {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/video-camera.svg);
+}
+
+@media (min-width: 767px) {
+  /* line 28, ../sass/pages_out/_it-case-study.scss */
+  .it-cs-suggest .img-container {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 50px;
+  }
+}
+/* line 33, ../sass/pages_out/_it-case-study.scss */
+.it-cs-suggest .img-container {
+  position: relative;
+}
+/* line 35, ../sass/pages_out/_it-case-study.scss */
+.it-cs-suggest .img-container img {
+  max-width: 100%;
+}
+/* line 38, ../sass/pages_out/_it-case-study.scss */
+.it-cs-suggest .img-container .logo-image {
+  max-width: 50px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 50, ../sass/pages_out/_it-case-study.scss */
+.it-cs-tools .tools-desc .extrabold-heading:after {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/bug.svg);
+}
+
+/* line 60, ../sass/pages_out/_it-case-study.scss */
+.it-cs-conclusion {
+  background-color: #48affb;
+}
+
+/* line 64, ../sass/pages_out/_it-case-study.scss */
+.it-cs-cta {
+  background-color: #32B67A;
+}
+/* line 65, ../sass/pages_out/_it-case-study.scss */
+.it-cs-cta .cta-content {
+  max-width: 770px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 1 February 2016
+Description : This file consists styles for IT case study page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-banner {
+  background-image: linear-gradient(-180deg, #429321 0%, #b4ec51 100%);
+  color: #fff;
+}
+
+/* line 14, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-start {
+  background-color: #32B67A;
+  color: #fff;
+}
+/* line 17, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-start .extrabold-heading:after {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/clapper-board.svg);
+}
+
+@media (min-width: 767px) {
+  /* line 28, ../sass/pages_out/_deal-case-study.scss */
+  .deal-cs-suggest .img-container {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 50px;
+  }
+}
+
+/* line 37, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-tools .tools-desc .extrabold-heading:after {
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/runner.svg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* line 48, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-conclusion {
+  background-color: #32B67A;
+}
+
+/* line 52, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-cta {
+  background-color: #f7c443;
+  color: #fff;
+}
+/* line 55, ../sass/pages_out/_deal-case-study.scss */
+.deal-cs-cta .cta-content {
+  max-width: 770px;
+}
+
+/*===================================================
+
+Author : Pratik Borsadiya
+created : 1 February 2016
+Description : This file consists styles for HR case study page.
+
+=====================================================*/
+/* line 9, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-banner {
+  background-image: linear-gradient(-180deg, #39adcc 0%, #3482ba 100%);
+  color: #fff;
+}
+
+/* line 14, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-start {
+  background-color: #48affb;
+  color: #fff;
+}
+/* line 17, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-start .extrabold-heading:after {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  background-image: url(/img/emoji/desktop.svg);
+}
+
+@media (min-width: 767px) {
+  /* line 28, ../sass/pages_out/_hr-case-study.scss */
+  .hr-cs-suggest .img-container {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 50px;
+  }
+}
+
+/* line 37, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-tools .tools-desc .extrabold-heading:after {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url(/img/emoji/ledger.svg);
+}
+
+/* line 47, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-conclusion {
+  background-color: #32B67A;
+}
+
+/* line 51, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-cta {
+  background-color: #4385f5;
+  color: #fff;
+}
+/* line 54, ../sass/pages_out/_hr-case-study.scss */
+.hr-cs-cta .cta-content {
+  max-width: 770px;
+}
+/*# sourceMappingURL=gridle_out.css.map */

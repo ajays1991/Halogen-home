@@ -1,0 +1,88 @@
+.dashboard-heading {
+	background: #999;
+}
+
+#map-view {
+	height: 600px;
+}
+
+#lauch { 
+	margin-left: 100px;
+}
+
+.controller-width {
+	margin-left: 15px
+}
+
+.controller-div 
+{
+	width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100px; /* Should be removed. Only for demonstration */
+}
+.column1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 370px; /* Should be removed. Only for demonstration */
+}
+#rcorners2 {
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 15px;
+    width: 150px;
+    height: 1px;
+}
+
+#rcorners{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 150px;
+    height: 15px;
+}
+
+#rcorners1{
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding: 20px;
+    width: 200px;
+    height: 105px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+#list-title span{
+	margin-left: 20px;
+}
+
+#new-resource {
+	margin-left: 50px;
+}
+
+#select-map-location {
+    height: 500px;
+}

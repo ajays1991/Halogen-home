@@ -1,0 +1,2 @@
+class DroneFlight < ApplicationRecord
+end

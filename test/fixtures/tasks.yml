@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assignee_id: 1
+  title: MyString
+  description: MyText
+  metadata: 
+  completed_on: 2017-12-30
+
+two:
+  assignee_id: 1
+  title: MyString
+  description: MyText
+  metadata: 
+  completed_on: 2017-12-30

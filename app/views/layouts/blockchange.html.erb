@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content=", ajays871@gmail.com">
+	<meta name="copyright" content=""> 
+	<title>Blockchange | Smokyquart Labs LLC</title>
+	
+	<!-- favicon -->
+   <!--  <link rel="shortcut icon" href="/assets/ico/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+	 -->
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/template.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/materialdesignicons-webfont.woff2?v=1.6.50" />
+	<link rel="stylesheet" type="text/css" href="/assets/materialdesignicons-webfont.woff?v=1.6.50" />
+	<link rel="stylesheet" type="text/css" href="/assets/materialdesignicons-webfont.ttf?v=1.6.50" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="assets/style.css">
+	
+</head>
+<script type="text/javascript">
+  	<%if Rails.env == "development"%>
+  		var api_url = "http://localhost:3000"
+  	<%else%>
+  		var api_url = "http://localhost:3000"
+  	<%end%>
+</script>
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner">					
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>						
+						<a class="navbar-brand" href="/" id="blockchage-heading">BlockChange<span class="heading-company"> by Smokyquart Labs LLC </span></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li id="home-link"><a href="/">Home <span class="sr-only">(current)</span></a></li>								
+								<li id="product-link"><a href="#product">Product</a></li>
+								<li id="team-link"><a href="#team">Our Team</a></li>								
+							</ul>
+						</div><!-- /.navbar-collapse -->
+						<ul class="nino-iconsGroup nav navbar-nav">
+							<li id="contact-link"><a href="/contact"><span class="top-contact">Contact</span></a></li>
+							<li id="jobs-link"><a href="/jobs"><span class="top-contact">Jobs</span></a></li>
+							<li id="signin-link"><a href="/signin"><span class="top-contact">Signin</span></a></li>
+						</ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+			<%if params[:action] == 'index'%>
+				<section id="nino-slider" class="carousel slide container" data-ride="carousel">
+					<h2 class="nino-sectionHeading">
+						<span class="nino-subHeading heading">Digital IOT based solutions</span>
+						
+					</h2>
+
+					<h2 class="nino-sectionHeading">
+						<span class="nino-subHeading heading">3D + Virtual Reality + IOT + Recreation</span>					
+					</h2>
+
+					<h2 class="nino-sectionHeading">
+						<span class="nino-subHeading heading">Automated solutions for field task force management</span>
+						
+					</h2>
+				</section>
+			<%end%>
+		</div>
+	</header>
+
+	<%= yield %>
+
+	 <!-- <section id="nino-brand">
+    	<div class="container">
+    		<div class="verticalCenter fw" layout="row">
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-1.png" alt=""></a></div>
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-2.png" alt=""></a></div>
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-3.png" alt=""></a></div>
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-4.png" alt=""></a></div>
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-5.png" alt=""></a></div>
+    			<div class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img src="assets/brand/img-6.png" alt=""></a></div>
+    		</div>
+    	</div>
+    </section> -->
+	
+	<footer id="footer">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-12">
+        			<div class="colInfo">
+	        			<h2>Smokyquart Labs LLC</h2>
+	        			<p>&nbsp;</p>
+	        			<div class="footerLogo">
+	        				<img src="/assets/running_horse.jpg">
+	        			</div>
+	        			<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<div class='about-us'>	
+		        			<p>
+		        				A company drawn toward chasing the axis of prototyping modern digital-IOT based products/solutions.We believe in thoughts applied toward the blend of product engineering, applied innovation and market or enterprise business or operation problems to compound a product solution. Our current business model stands on building problem solving and improving for both business and consumer. 
+		        			</p>
+		        			<p>
+								Our proven prototyped products and solutions collaborate with our business associates to produce a cost effective and market ready products.
+							</p>
+							<p>
+								We have a generative culture environment to enable each and every individual produce its best result. Our highly talented and hardworking team is what makes us a company.
+		        			</p>
+		        			<p>
+								We are supported by highly experienced mentors and industry experts for design review and prototying review and business advisors.</br>	
+		        			</p>
+	        			</div>
+	        			<div class="nino-followUs">
+	        				<!-- <div class="totalFollow"><span>15k</span> followers</div> -->
+	        				<div class="socialNetwork">
+	        					<span class="text">Connect Us: </span>
+	        					<a target="_blank" href="https://www.linkedin.com/company/13714812/" class="nino-icon"><img class="connect" src="/assets/our-team/linkedin.png"></i></a>			        					
+	        					<a target="_blank" href="https://angel.co/smokyquart-labs" class="nino-icon"><img class="connect" src="/assets/our-team/angelist.png"></i></a>			
+	        				</div>
+	        			</div>
+	        			<!-- <form action="" class="nino-subscribeForm">
+	        				<div class="input-group input-group-lg">
+								<input type="email" class="form-control" placeholder="Your Email" required>
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="submit">Subscribe</button>
+								</span>
+							</div>
+	        			</form> -->
+        			</div>
+        		</div>
+        		<!-- <div class="col-md-4 col-sm-6">
+        			<div class="colInfo">
+	        			<h3 class="nino-colHeading">Blogs</h3>
+	        			<ul class="listArticles">
+	        				<li layout="row" class="verticalCenter">
+	        					<a class="articleThumb fsr" href="#"><img src="/assets/our-blog/img-4.jpg" alt=""></a>
+	        					<div class="info">
+	        						<h3 class="articleTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+	        						<div class="date">Jan 9, 2016</div>
+	        					</div>
+	        				</li>
+	        				<li layout="row" class="verticalCenter">
+	        					<a class="articleThumb fsr" href="#"><img src="/assets/our-blog/img-5.jpg" alt=""></a>
+	        					<div class="info">
+	        						<h3 class="articleTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+	        						<div class="date">Jan 9, 2016</div>
+	        					</div>
+	        				</li>
+	        				<li layout="row" class="verticalCenter">
+	        					<a class="articleThumb fsr" href="#"><img src="/assets/our-blog/img-6.jpg" alt=""></a>
+	        					<div class="info">
+	        						<h3 class="articleTitle"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+	        						<div class="date">Jan 9, 2016</div>
+	        					</div>
+	        				</li>
+	        			</ul>
+        			</div>
+        		</div> -->
+        		<!-- <div class="col-md-4 col-sm-6">
+        			<div class="colInfo">
+	        			<h3 class="nino-colHeading">instagram</h3>
+	        			<div class="instagramImages clearfix">
+	        				<a href="#"><img src="/assets/instagram/img-1.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-2.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-3.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-4.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-5.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-6.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-7.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-8.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-9.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-3.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-4.jpg" alt=""></a>
+	        				<a href="#"><img src="/assets/instagram/img-5.jpg" alt=""></a>
+	        			</div>
+	        			<a href="#" class="morePhoto">View more photos</a>
+        			</div>
+        		</div> -->
+        	</div>
+			<div class="nino-copyright">Copyright &copy; 2018 com. All Rights Reserved. <br/>Smokyquart Labs LLC</div>
+        </div>
+    </footer>
+
+    <!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+    <form action="" id="nino-searchForm">
+    	<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+    	<i class="mdi mdi-close nino-close"></i>
+    </form>
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+	
+	<!-- javascript -->
+	<script type="text/javascript" src="/assets/jquery.min.js"></script>	
+	<script type="text/javascript" src="/assets/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="/assets/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="/assets/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="/assets/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="/assets/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="/assets/unslider-min.js"></script>
+	<script type="text/javascript" src="/assets/template.js"></script>
+	<%if params[:action] != 'index'%>
+		<script type="text/javascript" src="/assets/header.js"></script>
+	<%end%>
+	<%if params[:action] == 'dashboard'%>
+		<script type="text/javascript" src="/assets/init.js"></script>
+		<script type="text/javascript" src="/assets/dashboard.js"></script>
+	<%end%>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</html>
