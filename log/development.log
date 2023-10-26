@@ -5093,3 +5093,2447 @@ Can't verify CSRF token authenticity.
 Completed 200 OK in 335ms (Views: 10.1ms | ActiveRecord: 43.3ms | Allocations: 8761)
 
 
+Started GET "/signin.html?action=index" for ::1 at 2023-10-26 21:09:27 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.8ms | Allocations: 206)
+  Rendered layout layouts/blockchange.html.erb (Duration: 3.8ms | Allocations: 839)
+Completed 200 OK in 10ms (Views: 10.1ms | Allocations: 1583)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 21:09:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 21:09:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 21:09:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/images/go-to-top.png" for ::1 at 2023-10-26 21:09:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/images/go-to-top.png"):
+  
+Started GET "/" for ::1 at 2023-10-26 21:09:32 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 3.3ms | Allocations: 77)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 636)
+
+
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 21:09:32 +0530
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 21:09:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 21:09:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started GET "/" for ::1 at 2023-10-26 21:10:49 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 0.8ms | Allocations: 72)
+Completed 200 OK in 3ms (Views: 2.6ms | Allocations: 687)
+
+
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 21:10:49 +0530
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 21:10:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 21:10:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started GET "/" for ::1 at 2023-10-26 21:11:06 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 260)
+
+
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 21:11:06 +0530
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 21:11:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 21:11:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started POST "/auth/create" for ::1 at 2023-10-26 21:30:03 +0530
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (22.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (31.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 562ms (ActiveRecord: 62.9ms | Allocations: 5499)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/user_controller.rb:6:in `create'
+Started POST "/api/v1/destinations" for ::1 at 2023-10-26 21:30:17 +0530
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DestinationsController):
+  
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:10:49 +0530
+  
+Zeitwerk::NameError (expected file /Users/ppp/Documents/GitHub/Smokyquartz/Halogen-home/app/controllers/api/yilli/languages_controller.rb to define constant Api::Yilli::LanguagesController, but didn't):
+  
+zeitwerk (2.6.12) lib/zeitwerk/loader/callbacks.rb:33:in `on_file_autoloaded'
+zeitwerk (2.6.12) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.1) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.1) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.1) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.1) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.1) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.1) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:12:04 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 102.1ms | Allocations: 760)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:15:53 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 175.7ms | Allocations: 732)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:16:20 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 54.1ms | Allocations: 732)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:17:04 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 45.9ms | Allocations: 732)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-26 22:17:46 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 65.7ms | Allocations: 732)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/auth/create" for ::1 at 2023-10-26 22:52:14 +0530
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"email"=>"ajays8712@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (41.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (40.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ajays8712@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (71.7ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`) VALUES ('ajays8712@gmail.com', '$2a$12$z0d6QGVQRTQK66YZsmzkcuEhzKuI3MiCtk5DegwIa7MeUpI2zQnza', '2023-10-26 17:22:15', '2023-10-26 17:22:15')[0m
+  [1m[36mTRANSACTION (45.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 813ms (Views: 6.9ms | ActiveRecord: 322.1ms | Allocations: 8097)
+
+
+Started POST "/auth/create" for ::1 at 2023-10-26 22:52:45 +0530
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (40.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 340ms (ActiveRecord: 42.0ms | Allocations: 1442)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/user_controller.rb:6:in `create'
+Started POST "/auth/login" for ::1 at 2023-10-26 22:52:58 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}, "authentication"=>{"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (29.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 200 OK in 327ms (Views: 1.2ms | ActiveRecord: 29.4ms | Allocations: 745)
+
+
+Started GET "/" for ::1 at 2023-10-26 22:56:05 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 14.1ms | Allocations: 71)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 713)
+
+
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 22:56:05 +0530
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 22:56:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 22:56:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 22:56:10 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 1.3ms | Allocations: 201)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.6ms | Allocations: 820)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1435)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 22:56:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 22:56:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 22:56:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 22:58:29 +0530
+Chewy request strategy is `atomic`
+  [1m[36mActiveRecord::SchemaMigration Pluck (43.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 1.3ms | Allocations: 473)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.7ms | Allocations: 1163)
+Completed 200 OK in 33ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 5330)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 22:58:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 22:58:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 22:58:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 22:58:46 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.4ms | Allocations: 199)
+  Rendered layout layouts/blockchange.html.erb (Duration: 1.3ms | Allocations: 817)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1444)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 22:58:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 22:58:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 22:58:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 22:58:59 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 111)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 384)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 22:59:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 22:59:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 22:59:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 22:59:08 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 111)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 22:59:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 22:59:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 22:59:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/" for ::1 at 2023-10-26 22:59:51 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 1.4ms | Allocations: 77)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 640)
+
+
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 22:59:51 +0530
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 22:59:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 22:59:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-26 23:00:06 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.2ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.6ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 384)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-26 23:00:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-26 23:00:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-26 23:00:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+Started GET "/" for ::1 at 2023-10-26 23:04:43 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 5.0ms | Allocations: 73)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 644)
+
+
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-26 23:04:43 +0530
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-26 23:04:43 +0530
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-26 23:04:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 00:21:34 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}, "authentication"=>{"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (46.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 1130ms (Views: 8.5ms | ActiveRecord: 137.2ms | Allocations: 15383)
+
+
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:21:49 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 61.3ms | Allocations: 761)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:22:38 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 38.9ms | Allocations: 724)
+
+
+  
+NoMethodError (undefined method `find_for_authentication' for User:Class):
+  
+activerecord (7.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:63:in `find_record_from_identifier'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:31:in `authenticate_entity_from_token!'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:135:in `block (3 levels) in define_token_authentication_helpers_for'
+simple_token_authentication (1.18.1) lib/simple_token_authentication/token_authentication_handler.rb:137:in `block (2 levels) in define_token_authentication_helpers_for'
+activesupport (7.0.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+omniauth (2.1.1) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.1) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `block in call'
+chewy (7.3.4) lib/chewy/strategy.rb:60:in `wrap'
+chewy (7.3.4) lib/chewy.rb:154:in `strategy'
+chewy (7.3.4) lib/chewy/railtie.rb:21:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:25:16 +0530
+  
+NameError (uninitialized constant Api::Yilli::BApplicationController):
+  
+app/controllers/api/yilli/resource_controller.rb:1:in `<top (required)>'
+app/controllers/api/yilli/languages_controller.rb:1:in `<top (required)>'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:27:50 +0530
+  
+NameError (uninitialized constant Api::Yilli::BApplicationController):
+  
+app/controllers/api/yilli/resource_controller.rb:1:in `<top (required)>'
+app/controllers/api/yilli/languages_controller.rb:1:in `<top (required)>'
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:28:23 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+Can't verify CSRF token authenticity.
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.4ms | ActiveRecord: 100.0ms | Allocations: 3948)
+
+
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:29:42 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.3ms | ActiveRecord: 89.5ms | Allocations: 3897)
+
+
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:30:07 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"destination"=>{"name"=>"moga", "start_id"=>1, "destination_id"=>1, "start_location_id"=>1, "control_type"=>"manual", "metadata"=>{"test"=>"2322"}}, "language"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.4ms | ActiveRecord: 84.8ms | Allocations: 3931)
+
+
+Started POST "/api/yilli/languages" for ::1 at 2023-10-27 00:31:31 +0530
+Processing by Api::Yilli::LanguagesController#create as */*
+  Parameters: {"language"=>{"language"=>"moga", "region"=>1, "country"=>1, "continent"=>1}}
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLanguage Create (100.1ms)[0m  [1m[32mINSERT INTO `languages` (`language`, `country`, `region`, `continent`, `created_at`, `updated_at`) VALUES ('moga', '1', '1', '1', '2023-10-26 19:01:31.643532', '2023-10-26 19:01:31.643532')[0m
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::Yilli::LanguagesController#create, rendering head :no_content
+Completed 204 No Content in 177ms (ActiveRecord: 167.9ms | Allocations: 4685)
+
+
+Started GET "/api/yilli/languages" for ::1 at 2023-10-27 00:32:41 +0530
+Processing by Api::Yilli::LanguagesController#index as */*
+  Parameters: {"language"=>{"language"=>"moga", "region"=>1, "country"=>1, "continent"=>1}}
+No template found for Api::Yilli::LanguagesController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/api/yilli/languages" for ::1 at 2023-10-27 00:32:48 +0530
+Processing by Api::Yilli::LanguagesController#index as */*
+  Parameters: {"language"=>{"language"=>"moga", "region"=>1, "country"=>1, "continent"=>1}}
+No template found for Api::Yilli::LanguagesController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 251)
+
+
+Started GET "/api/yilli/languages" for ::1 at 2023-10-27 00:33:00 +0530
+Processing by Api::Yilli::LanguagesController#index as */*
+  Parameters: {"language"=>{"language"=>"moga", "region"=>1, "country"=>1, "continent"=>1}}
+No template found for Api::Yilli::LanguagesController#index, rendering head :no_content
+Completed 204 No Content in 18447ms (ActiveRecord: 0.0ms | Allocations: 139264)
+
+
+Started GET "/api/yilli/languages" for ::1 at 2023-10-27 00:35:48 +0530
+Processing by Api::Yilli::LanguagesController#index as */*
+  Parameters: {"language"=>{"language"=>"moga", "region"=>1, "country"=>1, "continent"=>1}}
+  Rendering api/yilli/languages/index.json.jbuilder
+  [1m[36mLanguage Load (44.7ms)[0m  [1m[34mSELECT `languages`.* FROM `languages`[0m
+  [1m[36mBooking Count (33.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `bookings` WHERE `bookings`.`language_id` = '1'[0m
+  Rendered api/yilli/languages/index.json.jbuilder (Duration: 200.2ms | Allocations: 10102)
+Completed 200 OK in 7339ms (Views: 59.2ms | ActiveRecord: 157.6ms | Allocations: 13577)
+
+
+Started GET "/signin.html" for ::1 at 2023-10-27 00:36:42 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.7ms | Allocations: 237)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.0ms | Allocations: 888)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1625)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 00:36:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 00:36:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 00:36:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 00:37:45 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 00:37:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 00:37:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 00:37:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 00:37:49 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 111)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 00:37:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 00:37:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.2ms | Allocations: 111)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 00:37:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 00:37:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 00:37:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 00:37:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:03:12 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.6ms | Allocations: 200)
+  Rendered layout layouts/blockchange.html.erb (Duration: 5.7ms | Allocations: 818)
+Completed 200 OK in 11ms (Views: 9.0ms | Allocations: 1485)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/yilli/signin.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:03:13 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:03:13 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:03:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:03:26 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.6ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/yilli/signin.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:03:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:03:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:03:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:03:40 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.8ms | Allocations: 200)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.4ms | Allocations: 818)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 1485)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:03:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:03:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:03:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:03:54 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.6ms | Allocations: 199)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.1ms | Allocations: 817)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 1485)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:03:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:03:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:03:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started POST "/users/sign_in" for ::1 at 2023-10-27 01:03:57 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_in"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:05:55 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.6ms | Allocations: 204)
+  Rendered layout layouts/blockchange.html.erb (Duration: 1.5ms | Allocations: 822)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 1492)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/yilli/signin.js"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:05:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:05:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:05:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:06:10 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.5ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/yilli/signin.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:06:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:06:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:06:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:06:37 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.6ms | Allocations: 200)
+  Rendered layout layouts/blockchange.html.erb (Duration: 1.9ms | Allocations: 818)
+Completed 200 OK in 4ms (Views: 3.5ms | Allocations: 1485)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/yilli/sign_in.js"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:06:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:06:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:06:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:06:54 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 111)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/yilli/sign_in.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:06:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:06:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:06:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/yilli/sign_in.js"):
+  
+Started GET "/javascript/yilli/sign_in.js" for ::1 at 2023-10-27 01:07:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/javascript/yilli/sign_in.js"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:11:48 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 1.2ms | Allocations: 200)
+  Rendered layout layouts/blockchange.html.erb (Duration: 3.8ms | Allocations: 818)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 1485)
+
+
+Started GET "/sssets/yilli/sign_in.js" for ::1 at 2023-10-27 01:11:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/sssets/yilli/sign_in.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:11:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:11:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:11:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:12:07 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.9ms | Allocations: 203)
+  Rendered layout layouts/blockchange.html.erb (Duration: 6.9ms | Allocations: 821)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 1491)
+
+
+Started GET "/asssets/yilli/sign_in.js" for ::1 at 2023-10-27 01:12:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/asssets/yilli/sign_in.js"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:12:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:12:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:12:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:12:36 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.8ms | Allocations: 203)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.6ms | Allocations: 821)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 1491)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:12:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:12:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:12:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:12:43 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.5ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:12:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:12:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:12:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:13:07 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.5ms | Allocations: 111)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 382)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:13:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:13:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:13:09 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 01:13:12 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajay_wal", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajay_wal' LIMIT 1[0m
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 216.0ms | Allocations: 3561)
+
+
+  
+NameError (undefined local variable or method `invalid_login_attempt' for #<AuthenticationController:0x00000000101d50>):
+  
+app/controllers/authentication_controller.rb:6:in `login'
+Started POST "/auth/login" for ::1 at 2023-10-27 01:16:27 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajay_wal", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajay_wal' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 56ms (Views: 2.4ms | ActiveRecord: 47.8ms | Allocations: 5412)
+
+
+Started GET "/dashboard" for ::1 at 2023-10-27 01:16:27 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/index.html within layouts/dashboard
+  Rendered dashboard/index.html within layouts/dashboard (Duration: 1.7ms | Allocations: 77)
+  Rendered layout layouts/dashboard.html.erb (Duration: 7.6ms | Allocations: 624)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1243)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flight-center" for ::1 at 2023-10-27 01:16:40 +0530
+Processing by DashboardController#flight_center as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/flight_center.html.erb within layouts/dashboard
+  Rendered dashboard/flight_center.html.erb within layouts/dashboard (Duration: 1.7ms | Allocations: 234)
+  Rendered layout layouts/dashboard.html.erb (Duration: 6.7ms | Allocations: 327)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/flights" for ::1 at 2023-10-27 01:16:42 +0530
+Processing by DashboardController#flights as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:42 +0530
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 2.8ms | Allocations: 377)
+  Rendered layout layouts/dashboard.html.erb (Duration: 44.4ms | Allocations: 1232)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 1624)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/api/v1/flights?size=100&page=1" for ::1 at 2023-10-27 01:16:43 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/flights_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/flights_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/flights_controller.rb:1:in `<top (required)>'
+Started GET "/drones" for ::1 at 2023-10-27 01:16:44 +0530
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:44 +0530
+Processing by DashboardController#drones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.2ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.2ms | Allocations: 364)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 756)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/api/v1/drones?size=100&page=1" for ::1 at 2023-10-27 01:16:45 +0530
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DronesController):
+  
+Started GET "/flight-plans" for ::1 at 2023-10-27 01:16:46 +0530
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Processing by DashboardController#flight_plans as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.2ms | Allocations: 151)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.4ms | Allocations: 244)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 526)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:47 +0530
+Started GET "/api/v1/flight_plans?size=100&page=1" for ::1 at 2023-10-27 01:16:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ActionController::RoutingError (uninitialized constant Api::V1::FlightPlansController):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fly-zones" for ::1 at 2023-10-27 01:16:48 +0530
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Processing by DashboardController#fly_zones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.7ms | Allocations: 304)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 839)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:49 +0530
+Started GET "/api/v1/fly_zones?size=100&page=1" for ::1 at 2023-10-27 01:16:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/fly_zones_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/fly_zones_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/fly_zones_controller.rb:1:in `<top (required)>'
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/destinations" for ::1 at 2023-10-27 01:16:52 +0530
+Processing by DashboardController#destinations as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.3ms | Allocations: 107)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/api/v1/destinations?size=100&page=1" for ::1 at 2023-10-27 01:16:53 +0530
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DestinationsController):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flight-center" for ::1 at 2023-10-27 01:16:54 +0530
+Processing by DashboardController#flight_center as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/flight_center.html.erb within layouts/dashboard
+  Rendered dashboard/flight_center.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.2ms | Allocations: 97)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:16:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:16:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:16:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flight-center" for ::1 at 2023-10-27 01:17:33 +0530
+Processing by DashboardController#flight_center as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/flight_center.html.erb within layouts/dashboard
+  Rendered dashboard/flight_center.html.erb within layouts/dashboard (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.2ms | Allocations: 97)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:17:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:17:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:17:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/index.html" for ::1 at 2023-10-27 01:17:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+Started GET "/api/v1/flights" for ::1 at 2023-10-27 01:17:38 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/flights_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/flights_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/flights_controller.rb:1:in `<top (required)>'
+Started GET "/flight-plans" for ::1 at 2023-10-27 01:17:41 +0530
+Processing by DashboardController#flight_plans as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.4ms | Allocations: 107)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:17:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/api/v1/flight_plans?size=100&page=1" for ::1 at 2023-10-27 01:17:42 +0530
+  
+ActionController::RoutingError (uninitialized constant Api::V1::FlightPlansController):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:17:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:17:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/login.html" for ::1 at 2023-10-27 01:17:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  
+Started GET "/" for ::1 at 2023-10-27 01:17:49 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 1.4ms | Allocations: 71)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 630)
+
+
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-27 01:17:49 +0530
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-27 01:17:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-27 01:17:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:17:55 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/blockchange.html.erb (Duration: 0.3ms | Allocations: 121)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 623)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:17:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:17:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:17:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started GET "/images/go-to-top.png" for ::1 at 2023-10-27 01:17:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/images/go-to-top.png"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 01:18:00 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajay_wal", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajay_wal' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 405)
+
+
+Started GET "/dashboard" for ::1 at 2023-10-27 01:18:00 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/index.html within layouts/dashboard
+  Rendered dashboard/index.html within layouts/dashboard (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.3ms | Allocations: 100)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:18:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:18:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:18:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 01:18:32 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajay_wal", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajay_wal' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.58ms)
+Completed 200 OK in 687348ms (Views: 8.3ms | ActiveRecord: 45.5ms | Allocations: 64968)
+
+
+Started POST "/auth/login" for ::1 at 2023-10-27 01:30:00 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Started GET "/signin.html" for ::1 at 2023-10-27 01:30:01 +0530
+Started POST "/auth/login" for ::1 at 2023-10-27 01:30:01 +0530
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.3ms | Allocations: 13)
+  Rendered layout layouts/blockchange.html.erb (Duration: 1.3ms | Allocations: 158)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 669)
+
+
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+  [1m[36mUser Load (184.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:30:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 1906ms (Views: 35.8ms | ActiveRecord: 1220.4ms | Allocations: 313163)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.92ms)
+Completed 200 OK in 1748ms (Views: 15.9ms | ActiveRecord: 647.7ms | Allocations: 287425)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:30:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:30:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 01:30:20 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 272ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 510)
+
+
+Started GET "/dashboard" for ::1 at 2023-10-27 01:30:20 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/index.html within layouts/dashboard
+  Rendered dashboard/index.html within layouts/dashboard (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.3ms | Allocations: 107)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 609)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:30:21 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:30:21 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:30:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/dashboard" for ::1 at 2023-10-27 01:34:26 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/index.html within layouts/dashboard
+  Rendered dashboard/index.html within layouts/dashboard (Duration: 1.2ms | Allocations: 71)
+  Rendered layout layouts/dashboard.html.erb (Duration: 2.7ms | Allocations: 612)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1279)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:34:27 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flights" for ::1 at 2023-10-27 01:34:32 +0530
+Processing by DashboardController#flights as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 1.2ms | Allocations: 181)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.6ms | Allocations: 274)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 606)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/api/v1/flights?size=100&page=1" for ::1 at 2023-10-27 01:34:33 +0530
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:33 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/flights_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/flights_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/flights_controller.rb:1:in `<top (required)>'
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:34:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flight-center" for ::1 at 2023-10-27 01:34:35 +0530
+Processing by DashboardController#flight_center as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/flight_center.html.erb within layouts/dashboard
+  Rendered dashboard/flight_center.html.erb within layouts/dashboard (Duration: 0.9ms | Allocations: 229)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.3ms | Allocations: 322)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 656)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:34:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/flights" for ::1 at 2023-10-27 01:34:39 +0530
+Processing by DashboardController#flights as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.4ms | Allocations: 107)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:39 +0530
+Started GET "/api/v1/flights?size=100&page=1" for ::1 at 2023-10-27 01:34:39 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/flights_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/flights_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/flights_controller.rb:1:in `<top (required)>'
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:40 +0530
+Started GET "/drones" for ::1 at 2023-10-27 01:34:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Processing by DashboardController#drones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.2ms | Allocations: 37)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.8ms | Allocations: 246)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 739)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:41 +0530
+Started GET "/api/v1/drones?size=100&page=1" for ::1 at 2023-10-27 01:34:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DronesController):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/flight-plans" for ::1 at 2023-10-27 01:34:42 +0530
+Processing by DashboardController#flight_plans as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.2ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.6ms | Allocations: 107)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:34:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:43 +0530
+Started GET "/api/v1/flight_plans?size=100&page=1" for ::1 at 2023-10-27 01:34:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ActionController::RoutingError (uninitialized constant Api::V1::FlightPlansController):
+  
+Started GET "/fly-zones" for ::1 at 2023-10-27 01:34:44 +0530
+Processing by DashboardController#fly_zones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/dashboard.html.erb (Duration: 0.4ms | Allocations: 107)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:34:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/api/v1/fly_zones?size=100&page=1" for ::1 at 2023-10-27 01:34:44 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/fly_zones_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/fly_zones_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/fly_zones_controller.rb:1:in `<top (required)>'
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:34:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:34:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fly-zones" for ::1 at 2023-10-27 01:35:02 +0530
+Processing by DashboardController#fly_zones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.7ms | Allocations: 184)
+  Rendered layout layouts/dashboard.html.erb (Duration: 2.1ms | Allocations: 724)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1395)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:35:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:35:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/api/v1/fly_zones?size=100&page=1" for ::1 at 2023-10-27 01:35:03 +0530
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:35:03 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/fly_zones_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/fly_zones_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/fly_zones_controller.rb:1:in `<top (required)>'
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fly-zones" for ::1 at 2023-10-27 01:35:30 +0530
+Processing by DashboardController#fly_zones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.8ms | Allocations: 184)
+  Rendered layout layouts/dashboard.html.erb (Duration: 2.2ms | Allocations: 724)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 1396)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:35:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:35:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/api/v1/fly_zones?size=100&page=1" for ::1 at 2023-10-27 01:35:31 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/fly_zones_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/fly_zones_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/fly_zones_controller.rb:1:in `<top (required)>'
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:35:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fly-zones" for ::1 at 2023-10-27 01:37:47 +0530
+Processing by DashboardController#fly_zones as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/list.html.erb within layouts/dashboard
+  Rendered dashboard/list.html.erb within layouts/dashboard (Duration: 0.6ms | Allocations: 184)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.5ms | Allocations: 724)
+Completed 200 OK in 4ms (Views: 3.7ms | Allocations: 1396)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:37:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:37:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/api/v1/fly_zones?size=100&page=1" for ::1 at 2023-10-27 01:37:48 +0530
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api/resource_controller.rb:3:in `<class:ResourceController>'
+app/controllers/api/resource_controller.rb:2:in `<top (required)>'
+app/controllers/api/v1/fly_zones_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/fly_zones_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/fly_zones_controller.rb:1:in `<top (required)>'
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:37:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:37:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:37:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/" for ::1 at 2023-10-27 01:37:56 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html
+  Rendered home/index.html (Duration: 3.2ms | Allocations: 70)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 626)
+
+
+Started GET "/w3images/ny.jpg" for ::1 at 2023-10-27 01:37:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/ny.jpg"):
+  
+Started GET "/w3images/la.jpg" for ::1 at 2023-10-27 01:37:56 +0530
+Started GET "/w3images/chicago.jpg" for ::1 at 2023-10-27 01:37:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/chicago.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/w3images/la.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/gridle_out.css.map"):
+  
+Started GET "/signin.html" for ::1 at 2023-10-27 01:38:06 +0530
+Processing by BlogController#signin as HTML
+  Rendering layout layouts/blockchange.html.erb
+  Rendering blog/signin.html.erb within layouts/blockchange
+  Rendered blog/signin.html.erb within layouts/blockchange (Duration: 0.9ms | Allocations: 198)
+  Rendered layout layouts/blockchange.html.erb (Duration: 2.0ms | Allocations: 816)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 1360)
+
+
+Started GET "/fonts/materialdesignicons-webfont.woff2?v=1.6.50" for ::1 at 2023-10-27 01:38:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/assets/materialdesignicons.min.css.map"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff2"):
+  
+Started GET "/fonts/materialdesignicons-webfont.woff?v=1.6.50" for ::1 at 2023-10-27 01:38:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.woff"):
+  
+Started GET "/fonts/materialdesignicons-webfont.ttf?v=1.6.50" for ::1 at 2023-10-27 01:38:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/materialdesignicons-webfont.ttf"):
+  
+Started POST "/auth/login" for ::1 at 2023-10-27 01:38:09 +0530
+Processing by AuthenticationController#login as JSON
+  Parameters: {"user"=>{"email"=>"ajays871@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ajays871@gmail.com' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 288ms (Views: 0.5ms | ActiveRecord: 7.2ms | Allocations: 617)
+
+
+Started GET "/dashboard" for ::1 at 2023-10-27 01:38:10 +0530
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboard/index.html within layouts/dashboard
+  Rendered dashboard/index.html within layouts/dashboard (Duration: 1.5ms | Allocations: 67)
+  Rendered layout layouts/dashboard.html.erb (Duration: 1.9ms | Allocations: 159)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 487)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2023-10-27 01:38:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2023-10-27 01:38:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2023-10-27 01:38:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  

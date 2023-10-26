@@ -107,7 +107,7 @@ var LoginModalController = {
         console.log("muskaraye ap login mein hai", password, email);
         $.ajax({
           type: "POST",
-          url: "http://3000/users/sign_in",
+          url: "http://localhost:3000/users/sign_in",
           data: { user: { email: email, password: password}},
           success: function(data){
             console.log(data);

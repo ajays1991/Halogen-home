@@ -1,8 +1,9 @@
 class ResourceController < ApplicationController
    	acts_as_token_authentication_handler_for User
-   	before_action :authenticate_user!
+   	#before_action :authenticate_user!
    	
    	def create
+   		byebug
    		resource = resource_name.to_s.split('_').map{|e| e.capitalize}.join.constantize.new(resource_params)
    		resource.current_user = current_user
    		resource.save!

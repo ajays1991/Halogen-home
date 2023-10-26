@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"code_pipeline","Source":"./modules/code_pipeline","Dir":"modules/code_pipeline"},{"Key":"ecs","Source":"./modules/ecs","Dir":"modules/ecs"},{"Key":"networking","Source":"./modules/networking","Dir":"modules/networking"},{"Key":"rds","Source":"./modules/rds","Dir":"modules/rds"}]}

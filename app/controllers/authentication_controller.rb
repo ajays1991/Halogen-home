@@ -3,8 +3,7 @@ class AuthenticationController < ApplicationController
 
 	def login
 		resource = User.find_by(:email => params[:user][:email])
-    	return invalid_login_attempt unless resource
-    	
+
 	    if resource&.authenticate(params[:user][:password])
 	    	token = jwt_encode(user_id: resource.id)
 	    	time = 1708333362

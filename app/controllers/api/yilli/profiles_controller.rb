@@ -1,28 +1,24 @@
-module Api
-	module V1
-		class ProfilesController < ResourceController
+class Api::Yilli::ProfilesController < ResourceController
 
-			def resource_name
-				:profile
-			end
+	def resource_name
+		:profile
+	end
 
-			def analytics
-				byebug
-			end
+	def analytics
+		byebug
+	end
 
-			private
+	private
 
-			def permitted_attributes
-				[:per_hour_rate, :per_hour_rate_currency, :video, :status, :chat, :call, :phone_number, :description, :city, :country, :rating, language_ids: []]		
-			end	
+	def permitted_attributes
+		[:per_hour_rate, :per_hour_rate_currency, :video, :status, :chat, :call, :phone_number, :description, :city, :country, :rating, language_ids: []]		
+	end	
 
-			def index_preloads
-				[tutor: [:bookings]]
-			end
+	def index_preloads
+		[tutor: [:bookings]]
+	end
 
-			def show_preloads
-				[tutor: [:bookings]]
-			end
-		end
+	def show_preloads
+		[tutor: [:bookings]]
 	end
 end

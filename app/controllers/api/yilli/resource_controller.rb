@@ -1,4 +1,4 @@
-class ResourceController < ApplicationController
+class Api::Yilli::ResourceController  < Api::ApplicationController
    	
    	rescue_from Exception, with: :render_exception_response
    	def create
@@ -8,6 +8,7 @@ class ResourceController < ApplicationController
    	end
 
    	def index
+   		byebug
 		@resources = resource_name.to_s.split('_').map{|e| e.capitalize}.join.constantize.all
 		@resources
 	end

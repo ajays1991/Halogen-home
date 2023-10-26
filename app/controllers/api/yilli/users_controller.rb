@@ -1,5 +1,5 @@
 
-class UsersController < ResourceController
+class Api::Yilli::ResourceController::UsersController < Api::Yilli::ResourceController
 
 	skip_before_action :authorize_request, only: :create
 
