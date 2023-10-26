@@ -7,7 +7,7 @@ class CreateDrones < ActiveRecord::Migration[5.1]
       t.string :ipv4
       t.string :type
       t.integer :flights_count
-      t.jsonb :metadata
+      t.json :metadata
 
       t.timestamps
     end

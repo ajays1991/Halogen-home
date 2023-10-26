@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
   resources :cars
   # devise_for :users
-  devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations' }
+  # devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations' }
+
+  # login routes
+
+  post '/auth/login', :to => 'authentication#login'
+
+  post '/auth/create', :to => 'user#create'
+  resources :users
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :accounts
@@ -43,6 +50,18 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    namespace :yilli do
+      resources :bookings
+      resources :languages
+      resources :profiles
+      resources :rates
+      resources :rooms
+      resources :slots
+      resources :users
+    end
+  end
+
   
 
   ####### Home page routes ####################################
@@ -54,13 +73,13 @@ Rails.application.routes.draw do
 
   ################### Block change routes ######################
 
-  get '/', :to => 'blog#index'
+  get '/', :to => 'home#index'
   get '/jobs', :to => 'blog#jobs'
   get '/signin', :to => 'blog#signin'
   get '/signup', :to => 'blog#signup'
   get '/contact', :to => 'blog#contact'  
   get '/coming', :to => 'blog#coming'
-
+  get '/index2', :to => 'home#index2'
   ###############################################################
 
   get '/flight-center', :to => 'dashboard#flight_center'

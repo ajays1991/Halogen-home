@@ -4,7 +4,7 @@ class CreateAssignmentTypes < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :account_id
       t.integer :user_id
-      t.jsonb :metadata
+      t.json :metadata
 
       t.timestamps
     end

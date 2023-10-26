@@ -4,8 +4,8 @@ class CreateCameraLogs < ActiveRecord::Migration[5.1]
       t.string :name
       t.references :flight, foriegn_key: true
       t.references :user, foriegn_key: true
-      t.jsonb :camera_specifications
-      t.jsonb :metadata
+      t.json :camera_specifications
+      t.json :metadata
       t.timestamps
     end
   end

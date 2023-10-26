@@ -4,9 +4,9 @@ class HomeController < ApplicationController
 		render "index", layout: false
 	end
 
-	# def signin
-	# 	render "signin"
-	# end
+	def signin
+		render "signin", layout: false
+	end
 
 	def home2
 		render "index2", layout: false

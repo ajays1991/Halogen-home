@@ -5,9 +5,9 @@ class CreateDestinations < ActiveRecord::Migration[5.1]
       t.string :location_type
       t.string :status
       t.text :address
-      t.jsonb :coordinates
+      t.json :coordinates
       t.references :user, foreign_key: true
-      t.jsonb :metadata
+      t.json :metadata
 
       t.timestamps
     end
@@ -17,7 +17,7 @@ class CreateDestinations < ActiveRecord::Migration[5.1]
       t.references :user, foreign_key: true      
       t.references :location, references: 'location'
       t.string :control_type
-      t.jsonb :metadata
+      t.json :metadata
       t.boolean :active
 
       t.timestamps

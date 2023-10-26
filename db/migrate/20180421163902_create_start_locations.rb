@@ -6,7 +6,7 @@ class CreateStartLocations < ActiveRecord::Migration[5.1]
       t.references :user, foreign_key: true      
       t.references :location, references: 'location'
       t.string :control_tylope
-      t.jsonb :metadata
+      t.json :metadata
       t.boolean :active
 
       t.timestamps

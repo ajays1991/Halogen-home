@@ -8,7 +8,7 @@ class CreateFlightPlans < ActiveRecord::Migration[5.1]
       t.integer :flight_plan_type
       t.references :start_location
       t.references :destination
-      t.jsonb :metadata
+      t.json :metadata
       t.timestamps
     end
   end

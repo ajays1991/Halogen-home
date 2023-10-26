@@ -4,7 +4,7 @@ class CreateGpsBeamerLogs < ActiveRecord::Migration[5.1]
       t.string :latitude
       t.string :longitude
       t.references :flight, foriegn_key: true      
-      t.jsonb :metadata
+      t.json :metadata
       t.timestamps
     end
   end

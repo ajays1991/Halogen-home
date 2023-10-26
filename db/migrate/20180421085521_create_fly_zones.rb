@@ -5,8 +5,8 @@ class CreateFlyZones < ActiveRecord::Migration[5.1]
       t.string :status
       t.text :regional_office_address
       t.references :user, foreign_key: true      
-      t.jsonb :coordinates
-      t.jsonb :metadata
+      t.json :coordinates
+      t.json :metadata
 
       t.timestamps
     end

@@ -9,7 +9,7 @@ class CreateFlights < ActiveRecord::Migration[5.1]
       t.references :drone, foreign_key: true
       t.references :flight_plan, foreign_key: true
       t.references :fly_zone, foreign_key: true
-      t.jsonb :metadata
+      t.json :metadata
 
       t.timestamps
     end
